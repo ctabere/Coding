@@ -141,3 +141,40 @@ a:link {
     border: 1px double #dccfed;
     padding: 1px;
  }
+/* Styling for contact.html 
+Can't seem to get the form centered correctly
+Also having issues with text area - it easily breaks the page
+*/
+#contactcontainer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contactform {
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(to right, #8121d0, #291c3a);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    border: 3px #dccfed solid;
+    padding: 10px;
+    background-color: #291c3a;
+    color: #dccfed;
+    border-radius: 50px;
+}
+#contactform input {
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px #dccfed solid;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
