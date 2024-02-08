@@ -1,1 +1,1 @@
-repo to work with mentoring group
+repo to work with mentoring group - made it public
