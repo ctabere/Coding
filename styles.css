@@ -178,3 +178,9 @@ Also having issues with text area - it easily breaks the page
     align-items: center;
 }
 
+/* hobbies grid */
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
