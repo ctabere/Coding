@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
+/* This section is the styling for the photo grid */
 .container {
 max-width: 1170px;
 width: 90%;
@@ -38,5 +38,5 @@ padding: 50px 0;
         flex-direction: column;
     }
 }
-
+/* end of photo grid styling */
 
