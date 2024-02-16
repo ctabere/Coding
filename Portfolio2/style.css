@@ -3,12 +3,29 @@
     margin: 0;
 }
 
-.navbaricons {
+#topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+/* Need to fix contact me alignment for topnav */
+
+.heromain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+.heronav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    background-image: linear-gradient(to bottom, #ff9ad2,  #f59d8f);
+    background-image: linear-gradient(to bottom, #000000,  #747474);
 }
 
 .icon {

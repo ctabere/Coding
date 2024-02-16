@@ -13,16 +13,22 @@
                     <a href="#Skills">Skills</a>
                     <a href="#Portfolio">Portfolio</a>
                     <a href="#Services">Services</a>
-                    <button>Contact Me</button>
+                    <button class="button" id="contactme">Contact Me</button>
                 </nav>
-                <section class="heronav">
-                    <div>
-                        <p>Hi, I'm [insert name]</p>
+                <section class="hero">
+                    <div class="heromain">
+                        <div class="herotext">
+                            <h1>Hi, I'm [insert name]</h1>
+                            <h2>Web Developer</h2>
+                            <img class="icon" src="media/github.png" alt="HTML5" />
+                            <img class="icon" src="media/linkedin.png" alt="CSS" />
+                            <img class="icon" src="media/download.png" alt="My Resume" />
+                        </div>
+                        <div class="herophoto">
+                            <img src="Media/herophoto.jpg" alt="My Photo" />
+                        </div>
                     </div>
-                    <div>
-                        <img src="images/profile.jpg" alt="My Photo" />
-                    </div>
-                    <nav class="navbaricons" id="midnav">
+                    <nav class="heronav" id="midnav">
                         <img class="icon" src="media/html5.png" alt="HTML5" />
                         <img class="icon" src="media/CSS.png" alt="CSS" />
                         <img class="icon" src="media/JS.png" alt="JavaScript" />
@@ -153,16 +159,23 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
-                <div id="contactcontainer">
-                    <form id="contactform">
-                        <h1>Contact Me</h1>
-                        <a>Name </a><input type="text" name="name" placeholder="Name" class="contactInputFields" required />
-                        <a>Email </a><input type="email" name="email" placeholder="Email" class="contactInputFields" required />
-                        <a>Message </a><textarea name="message" placeholder="Message" class="contactInputFields"></textarea>
-                        <input type="submit" value="Get Started Now" class="contactInputFields" maxlength="500">
-                    </form>
-                </div>
-            </section>    
+            <footer class="footer">
+                <section class="contact">
+                    <div id="contactcontainer">
+                        <form id="contactform">
+                            <h1>Satrt Building Your Website Today!</h1>
+                            <h3>Complete the form bnelow to schedule a free consultation and turn your dreams into reality</h3>
+                            <a>Name </a><input type="text" name="name" placeholder="Name" class="contactInputFields" required />
+                            <a>Email </a><input type="email" name="email" placeholder="Email" class="contactInputFields" required />
+                            <a>Message </a><textarea name="message" placeholder="Message" class="contactInputFields"></textarea>
+                            <input type="submit" value="Get Started Now" class="contactInputFields" maxlength="500">
+                        </form>
+                    </div>
+                </section>
+                <nav class="navbar" id="bottomnav">
+                    <a href="#t&s">Terms & Support</a>
+                    <a href="#canva">Designed with Canva</a>
+                </nav>
+            </footer>       
         </body>
     </html>
