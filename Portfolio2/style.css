@@ -5,10 +5,32 @@
 
 #topnav {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 60px;
 }
+
+#topnav a {
+    margin-right: 15px;
+  }
+  
+  #topnav button {
+    background-color: rgb(205, 41, 0);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 5%;
+  }
+  
+
 
 /* Need to fix contact me alignment for topnav */
 
@@ -40,6 +62,25 @@
     align-items: center;
     height: 100%;
 }
+
+.herophoto {
+    width: 50%;
+}
+
+.herotext {
+    width: 50%;
+    text-align: right;
+}
+
+.herotext h2 {
+    font-size: 40px;
+}
+
+.herotext h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
 /* This section is the styling for the photo grid */
 .container {
 max-width: 1170px;
