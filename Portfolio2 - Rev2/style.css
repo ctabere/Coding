@@ -90,6 +90,7 @@ button {
 	flex-direction: column;
 	gap: 0;
 	margin: auto 35rem;
+    white-space: nowrap;
 }
 
 #hero-headline h1 {
@@ -234,8 +235,6 @@ button {
     font-weight: 600;
 }
 
-}
-
 #skills-left {
     border: 4px dotted green;
     padding: 1rem; /* is this redundant?? */
@@ -245,8 +244,33 @@ button {
 #skills-right {
     border: 5px solid black;
     border-radius: 15px;
-    padding: 1rem; /* is this redundant?? */
+    padding: 1rem; /* is this redundant? */
     margin-left: 4rem;
     background-color: rgb(250, 247, 244);
+    min-width: 15%;  /* should this be replaced with something better? */  
 }
+/* the education grid */
+
+#codeacademy0 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 100px;
+    grid-template-areas:
+      "a c"
+      "b b";
+}
+
+#codeacademy0 h3 {
+    grid-area: a;
+}
+
+#codeacademy0 h4 {
+    grid-area: b;
+}
+
+#codeacademy0 h5 {
+    grid-area: c;
+}
+
+#codeacademy0 </div>
 
