@@ -322,3 +322,137 @@ p {
 .services {
     margin-top: 80px;
   }
+
+  .services h2 {
+    font-size: 2.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+#servicecards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    border: 5px dotted black;
+}
+
+.scards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    margin: 2rem;
+    padding: 2rem;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: rgb(250, 247, 244);
+}
+
+.scards img {
+    height: 100px;
+    width: 100px;
+}
+
+.scards h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.scards p {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.scards h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* testimonials styling */
+.testimonials {
+    margin-top: 80px;
+    background: linear-gradient(to right, black, rgb(42, 42, 42));
+  }
+
+#testcarousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    height: 100%;
+}
+
+#testcarousel div {
+    background-color: rgb(250, 247, 244) ;
+    border: 3px dotted red;
+    border-radius: 5px;
+    max-width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 15px;
+}
+
+/* #testcards {
+    
+} */
+
+.testcards img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.tcard1 {
+    position: relative;
+}
+
+.tphoto1 {
+    position: absolute;
+    top: 0;
+    left: 10;
+}
+
+.testcards h2 {
+    font-size: 1rem;
+}
+
+/* contact and bottom nav */.contact-form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-form h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
+  
+  .navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+
+  
