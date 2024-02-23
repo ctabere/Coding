@@ -1,4 +1,4 @@
-/* Global Styles */
+Global Styles
 * {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
@@ -26,6 +26,12 @@ button {
 	font-size: 1.25rem;
 	width: fit-content;
 	cursor: pointer;
+}
+
+p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Navigation */
@@ -82,21 +88,26 @@ button {
 	justify-content: center;
 	max-width: 100vw;
 	height: 900px;
+    /* border: 3px dotted purple; */
 }
 
 #hero-headline {
-	width: fit-content;
 	display: flex;
 	flex-direction: column;
-	gap: 0;
-	margin: auto 35rem;
+    align-items: right;
+	margin: 25rem;
+    margin-left: 25vw; /* I don't understand why this worked */
     white-space: nowrap;
+    /* border: 3px dotted purple; */
+    width: 50vw;
+    height: 10vw;
 }
 
 #hero-headline h1 {
 	font-size: 4rem;
 	font-weight: 600;
 	margin: 0;
+    margin-bottom: 1rem;
 }
 
 #hero-headline h2 {
@@ -111,6 +122,8 @@ button {
 	position: relative;
 	margin-right: 5rem;
 	overflow-y: clip;
+    /* border: 3px dotted purple; */
+    margin-right: 25vw;
 }
 
 #hero-headline-links {
@@ -179,7 +192,11 @@ button {
 	justify-content: center;
 	max-width: 100vw;
 	height: 900px;
-    border: 5px dotted red;
+    /* border: 5px dotted red; */
+}
+.bold {
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 #about-headline {
@@ -225,52 +242,31 @@ button {
 	flex-direction: row;
 	justify-content: center;
 	max-width: 100vw;
-	height: 900px;
-    border: 5px dotted blue;
+	height: 800px;
+    /* border: 5px dotted blue; */
     padding: 2rem;
+    font-size: 2rem;
 }
 
-#skills h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
+#skills p {
+    font-size: 1.2rem;
 }
 
 #skills-left {
-    border: 4px dotted green;
+    /* border: 4px dotted green; */
     padding: 1rem; /* is this redundant?? */
     margin-right: 4rem;
 }
 
 #skills-right {
     border: 5px solid black;
-    border-radius: 15px;
-    padding: 1rem; /* is this redundant? */
-    margin-left: 4rem;
+    border-radius: 25px;
+    padding: 0px 20px; /* is this redundant? */
+    margin: 2rem;
     background-color: rgb(250, 247, 244);
-    min-width: 15%;  /* should this be replaced with something better? */  
+    min-width: 20%;  /* should this be replaced with something better? */  
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
 }
-/* the education grid */
-
-#codeacademy0 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 100px 100px;
-    grid-template-areas:
-      "a c"
-      "b b";
-}
-
-#codeacademy0 h3 {
-    grid-area: a;
-}
-
-#codeacademy0 h4 {
-    grid-area: b;
-}
-
-#codeacademy0 h5 {
-    grid-area: c;
-}
-
-#codeacademy0 </div>
 
