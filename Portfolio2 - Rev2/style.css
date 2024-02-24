@@ -365,54 +365,61 @@ p {
 
 /* testimonials styling */
 .testimonials {
-    margin-top: 80px;
+    margin-top: 100px;
     background: linear-gradient(to right, black, rgb(42, 42, 42));
-
+    height: 300px;
+    border: 3px dotted purple;
 
   }
 
-.testimonials h2 {
-    color :white;
-    padding-top: 1.5rem;
+  .testimonials > h2 {
+    color: white;
+    margin-left: 50px;
   }
 
 #testcarousel {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: space-between;
-    height: 100%;
-}
-
-#testcarousel div {
-    background-color: rgb(250, 247, 244) ;
-    border: 3px dotted red;
-    border-radius: 5px;
-    max-width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 15px;
-    position: relative;
+    height: 250px;
+    border: 3px dotted green;
+    overflow-x: scroll;
+    overflow-y: clip;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* #testcards */
 
-.testcards img {
+.testcards {
+    width: 400px;
     height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    background-color: rgb(250, 247, 244) ;
+    border: 3px dotted red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    margin: auto 4rem;
+    min-width: 300px;
 }
 
-.tphoto1 {
+.testcards img {
+    height: 100px !important;
+    width: 100px;
+    border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: -3.5rem;
+    top: -3rem;
 }
+
+
 
 .testcards h2 {
     font-size: 1rem;
+    color: black;
 }
 
 /* contact and bottom nav */.contact-form {
