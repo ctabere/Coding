@@ -329,15 +329,6 @@ p {
     text-align: center;
   }
 
-#servicecards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    border: 5px dotted black;
-}
-
 .scards {
     display: flex;
     flex-direction: row;
@@ -376,9 +367,17 @@ p {
 .testimonials {
     margin-top: 80px;
     background: linear-gradient(to right, black, rgb(42, 42, 42));
+
+
+  }
+
+.testimonials h2 {
+    color :white;
+    padding-top: 1.5rem;
   }
 
 #testcarousel {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -395,11 +394,10 @@ p {
     justify-content: center;
     align-items: center;
     margin-inline: 15px;
+    position: relative;
 }
 
-/* #testcards {
-    
-} */
+/* #testcards */
 
 .testcards img {
     height: 100px;
@@ -407,14 +405,10 @@ p {
     border-radius: 50%;
 }
 
-.tcard1 {
-    position: relative;
-}
-
 .tphoto1 {
     position: absolute;
     top: 0;
-    left: 10;
+    left: 0;
 }
 
 .testcards h2 {
