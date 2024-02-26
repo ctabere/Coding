@@ -422,7 +422,9 @@ p {
     color: black;
 }
 
-/* contact and bottom nav */.contact-form {
+/* contact and bottom nav */
+
+.contact-form {
   width: 50%;
   margin: 0 auto;
   padding: 50px;
