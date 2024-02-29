@@ -329,23 +329,49 @@ p {
     text-align: center;
   }
 
-.scards {
+
+
+#servicecards {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    position: relative;
+    justify-content: space-between;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+/* Service arrows */
+#servicecards > img {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 15%;
     align-items: center;
-    height: 100%;
-    width: 25%;
-    margin: 2rem;
-    padding: 2rem;
-    border: 3px solid black;
+    justify-content: center;
+}
+
+#servicecard-arrow-left {
+    transform: rotate(90deg);
+}
+
+#servicecard-arrow-right {
+    transform: rotate(-90deg);
+}
+
+/* skill card design */
+
+.scards {
     border-radius: 25px;
     background-color: rgb(250, 247, 244);
+    border: 3px solid black;
+    margin: 2rem;
+    padding: 3cqb;
+    height: 100%;
+    width: 20%;
 }
 
 .scards img {
-    height: 100px;
-    width: 100px;
+    height: 10em;
+    width: 10em;
+    margin: auto 4rem; /* why? - this is not responsive */
 }
 
 .scards h2 {
