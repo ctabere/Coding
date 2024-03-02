@@ -394,7 +394,7 @@ p {
     margin-top: 100px;
     background: linear-gradient(to right, black, rgb(42, 42, 42));
     height: 300px;
-    border: 3px dotted purple;
+    /* border: 3px dotted purple; */
 
   }
 
@@ -409,7 +409,7 @@ p {
     justify-content: center;
     align-content: space-between;
     height: 250px;
-    border: 3px dotted green;
+    /* border: 3px dotted green; */
     overflow-x: scroll;
     overflow-y: clip;
     width: 100%;
@@ -422,7 +422,7 @@ p {
     width: 400px;
     height: 100px;
     background-color: rgb(250, 247, 244) ;
-    border: 3px dotted red;
+    /* border: 3px dotted red;  */
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -430,6 +430,7 @@ p {
     position: relative; 
     margin: auto 4rem;
     min-width: 300px;
+    padding: 1rem;
 }
 
 .testcards img {
@@ -441,11 +442,10 @@ p {
     top: -3rem;
 }
 
-
-
 .testcards h2 {
     font-size: 1rem;
     color: black;
+    padding: 1rem;
 }
 
 /* contact and bottom nav */
