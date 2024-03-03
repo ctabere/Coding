@@ -450,13 +450,17 @@ p {
 
 /* contact and bottom nav */
 
-.contact-form {
-  width: 50%;
+#contactform {
+  width: 30%;
   margin: 0 auto;
   padding: 50px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form h1 {
