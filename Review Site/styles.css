@@ -113,3 +113,9 @@ body {
 .footer {
     background-color: grey;
 }
+
+/* section for reviews */
+
+.reviews {
+    border: 2px soild black;
+}
