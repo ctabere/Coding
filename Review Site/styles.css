@@ -117,5 +117,13 @@ body {
 /* section for reviews */
 
 .reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.reviews div {
     border: 2px soild black;
 }
