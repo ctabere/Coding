@@ -90,4 +90,38 @@ body *:after {
   left: 7.9vmin;
   transform: rotate(-53deg);
   border-radius: 50%;
+}
+
+.face-1 {
+  width: 10vmin;
+  height: 5vmin;
+  background: #000;
+  top: -8.5vmin;
+  left: -24.1vmin;
+  transform: rotate(-8deg);
+}
+.face-1::before {
+  width: 6vmin;
+  height: 8vmin;
+  background: #000;
+  top: 3vmin;
+  left: 2.5vmin;
+  transform: rotate(-26deg);
+}
+.face-1::after {
+  width: 15vmin;
+  height: 10vmin;
+  background: #000;
+  top: 5.5vmin;
+  left: 5.4vmin;
+  transform: rotate(25deg);
+}
+.face-2 {
+  width: 10vmin;
+  height: 12.7vmin;
+  background: #000;
+  top: 7.2vmin;
+  left: 6vmin;
+  transform: rotate(3deg);
+  border-radius: 0 0 10vmin 0;
 }/*# sourceMappingURL=main.css.map */
