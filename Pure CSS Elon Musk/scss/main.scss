@@ -360,3 +360,62 @@ body {
       }
     }
   }
+
+  .eye-left {
+    &-1 {
+        width: 3.4vmin;
+        height: 1.1vmin;
+        background: $portrait-color;
+        top: -24.6vmin;
+        left: -6.6vmin;
+        border-radius: 0 1vin 0 0;
+
+        &::before {
+            width: 1vmin;
+            height: 2vmin;
+            background: $bg-color;
+            top: -1.1vmin;
+            left: -0.2vmin;
+            transform: rotate(65deg);
+            box-shadow: 2.7vmin -2.3vmin 0 0.1vmin $bg-color;
+        }
+    }
+    
+    &::after {
+        width: 1.5vmin;
+        height: 0.5vmin;
+        background: $bg-color;
+        top: 1vmin;
+        left: -0.2vmin;
+        border-radius: 0 0.2vmin 0 0;
+    }
+
+    &-2 {
+        width: 4.5vmin;
+        height: 1vmin;
+        background: $portrait-color;
+        top: -20.4vmin;
+        left: -7vmin;
+        transform: skewX(55deg);
+
+        &::before {
+            width: 1vmin;
+            height: 2vmin;
+            background: $bg-color;
+            top: -0.1vmin;
+            left: 3.9vmin;
+            transform: skewX(-55deg) rotate(52deg);
+            box-shadow: -4vmin 3.4vmin 0 0.1vmin $bg-color;
+        }
+
+        &::after {
+            width: 3.1vmin;
+            height: 1vmin;
+            background: $portrait-color;
+            top: 0.6vmin;
+            left: -0.3vmin;
+            transform: skewX(-55deg);
+            border-radius:0.8vmin 0.7vmin 0 0;
+        }
+    }
+} 
