@@ -418,4 +418,32 @@ body {
             border-radius:0.8vmin 0.7vmin 0 0;
         }
     }
-} 
+
+    &-3 {
+        width: 1.4vmin;
+        height: 1.2vmin;
+        background: $dark-color;
+        top: -19.7vmin;
+        left: -6.8vmin;
+        transform: skewX(5deg);
+        border-radius: 0 0 1vmin 0.8vmin;
+    
+        &::before {
+          width: 1vmin;
+          height: 0.5vmin;
+          background: $dark-color;
+          top: -0.1vmin;
+          left: 1vmin;
+          transform: rotate(10deg);
+        }
+    
+        &::after {
+          width: 0.8vmin;
+          height: 1.7vmin;
+          background: $dark-color;
+          left: -2.3vmin;
+          transform: rotate(50deg);
+          border-radius: 0 0 0.5vmin 0.5vmin;
+        }
+      }
+    }

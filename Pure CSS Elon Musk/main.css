@@ -371,4 +371,29 @@ body *:after {
   left: -0.3vmin;
   transform: skewX(-55deg);
   border-radius: 0.8vmin 0.7vmin 0 0;
+}
+.eye-left-3 {
+  width: 1.4vmin;
+  height: 1.2vmin;
+  background: #000;
+  top: -19.7vmin;
+  left: -6.8vmin;
+  transform: skewX(5deg);
+  border-radius: 0 0 1vmin 0.8vmin;
+}
+.eye-left-3::before {
+  width: 1vmin;
+  height: 0.5vmin;
+  background: #000;
+  top: -0.1vmin;
+  left: 1vmin;
+  transform: rotate(10deg);
+}
+.eye-left-3::after {
+  width: 0.8vmin;
+  height: 1.7vmin;
+  background: #000;
+  left: -2.3vmin;
+  transform: rotate(50deg);
+  border-radius: 0 0 0.5vmin 0.5vmin;
 }/*# sourceMappingURL=main.css.map */
