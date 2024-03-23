@@ -327,7 +327,7 @@ body *:after {
   background: #000;
   top: -24.6vmin;
   left: -6.6vmin;
-  border-radius: 0 1vin 0 0;
+  border-radius: 0 1vmin 0 0;
 }
 .eye-left-1::before {
   width: 1vmin;
@@ -336,9 +336,9 @@ body *:after {
   top: -1.1vmin;
   left: -0.2vmin;
   transform: rotate(65deg);
-  box-shadow: 2.7vmin -2.3vmin 0 0.1vmin #ff0000;
+  box-shadow: 2.7vmin -2.3vmin 0 0.01vmin #ff0000;
 }
-.eye-left::after {
+.eye-left-1::after {
   width: 1.5vmin;
   height: 0.5vmin;
   background: #ff0000;
@@ -366,7 +366,7 @@ body *:after {
 .eye-left-2::after {
   width: 3.1vmin;
   height: 1vmin;
-  background: #000;
+  background: #ff0000;
   top: 0.6vmin;
   left: -0.3vmin;
   transform: skewX(-55deg);
@@ -493,7 +493,7 @@ body *:after {
 .nose-1::before {
   width: 3.5vmin;
   height: 2vmin;
-  background: #000;
+  background: #ff0000;
   top: -0.6vmin;
   left: -0.3vmin;
   border-radius: 0 0 1.7vmin 0;
@@ -501,7 +501,7 @@ body *:after {
 .nose-1::after {
   width: 1vmin;
   height: 2vmin;
-  background: #000;
+  background: #ff0000;
   top: 0.4vmin;
   left: -0.7vmin;
   transform: rotate(40deg);
@@ -509,7 +509,7 @@ body *:after {
 .nose-2 {
   width: 2vmin;
   height: 1vmin;
-  background: #000;
+  background: #ff0000;
   top: -4vmin;
   left: 5vmin;
   transform: rotate(30deg);
