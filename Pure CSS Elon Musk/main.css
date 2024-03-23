@@ -88,8 +88,7 @@ body *:after {
   background: #000;
   top: -1.5vmin;
   left: 7.9vmin;
-  transform: rotate(-53deg);
-  border-radius: 50%;
+  transform: rotate(-45deg);
 }
 
 .face-1 {
@@ -514,4 +513,309 @@ body *:after {
   left: 5vmin;
   transform: rotate(30deg);
   border-radius: 0.5vmin 0 0 0;
+}
+
+.mouth-1 {
+  width: 9.3vmin;
+  height: 1vmin;
+  background: #000;
+  top: 0.8vmin;
+  left: 4vmin;
+  transform: rotate(-6deg);
+  border-radius: 50% 50% 50% 50%/100% 100% 0 0;
+}
+.mouth-1::before {
+  width: 4.6vmin;
+  height: 2.7vmin;
+  background: #000;
+  top: 0.6vmin;
+  left: 3.7vmin;
+  transform: rotate(15deg);
+  border-radius: 1vmin 0 1vmin 0.2vmin;
+}
+.mouth-1::after {
+  width: 7vmin;
+  height: 1.3vmin;
+  background: #ff0000;
+  top: 1vmin;
+  left: -0.7vmin;
+  transform: skewX(-10deg);
+  border-radius: 50% 50% 50% 50%/0 0 100% 100%;
+}
+.mouth-2 {
+  width: 2.5vmin;
+  height: 1.1vmin;
+  background: #000;
+  top: 1.4vmin;
+  left: 12.4vmin;
+  border-radius: 0 0 100% 0;
+}
+.mouth-2::before {
+  width: 2vmin;
+  height: 1.4vmin;
+  background: #ff0000;
+  top: 1vmin;
+  left: 0.2vmin;
+  transform: rotate(-30deg);
+  border-radius: 1vmin 0 100% 0;
+}
+.mouth-2::after {
+  width: 1.3vmin;
+  height: 0.5vmin;
+  background: #ff0000;
+  top: 0.3vmin;
+  left: 1.5vmin;
+  transform: rotate(-30deg);
+}
+.mouth-3 {
+  width: 0;
+  height: 0;
+  border-left: 1.6vmin solid transparent;
+  border-bottom: 3.1vmin solid #000;
+  top: -2.4vmin;
+  left: 14.8vmin;
+  transform: rotate(5deg);
+}
+.mouth-3::before {
+  width: 1vmin;
+  height: 0.6vmin;
+  background: #ff0000;
+  top: 3vmin;
+  left: -0.9vmin;
+  transform: rotate(10deg);
+  border-radius: 50%;
+}
+
+.neck-1 {
+  z-index: 2;
+  width: 1.9vmin;
+  height: 11vmin;
+  background: #000;
+  top: 16vmin;
+  left: -22.8vmin;
+  border-radius: 0 0 0 100%;
+}
+.neck-1::before {
+  width: 2vmin;
+  height: 4.5vmin;
+  background: #ff0000;
+  top: 3.3vmin;
+  left: 1.6vmin;
+  transform: rotate(-9deg);
+}
+.neck-1::after {
+  width: 2vmin;
+  height: 10vmin;
+  background: #000;
+  top: 0.2vmin;
+  left: 4.8vmin;
+  transform: rotate(-57deg);
+  box-shadow: 1vmin 4vmin 0 0.1vmin #000;
+}
+.neck-2 {
+  z-index: 2;
+  width: 0.3vmin;
+  height: 2.5vmin;
+  background: #ff0000;
+  top: 5.3vmin;
+  left: -25vmin;
+  border-radius: 0.4vmin 0 0 0;
+}
+.neck-2::before {
+  width: 0.3vmin;
+  height: 1vmin;
+  background: #ff0000;
+  top: 1vmin;
+  left: -0.2vmin;
+  transform: rotate(40deg);
+  border-radius: 0 100% 0 0;
+}
+.neck-2::after {
+  width: 1vmin;
+  height: 2vmin;
+  background: #ff0000;
+  top: 10.5vmin;
+  left: 2.1vmin;
+  transform: rotate(14deg);
+}
+.neck-3 {
+  z-index: 2;
+  width: 4.4vmin;
+  height: 2.2vmin;
+  background: #000;
+  top: 24.2vmin;
+  left: -4.1vmin;
+  transform: rotate(20deg);
+  border-radius: 50% 50% 50% 50%/0 0 100% 100%;
+  box-shadow: 0 -1vmin 0 0.1vmin #000;
+}
+.neck-3::before {
+  width: 2vmin;
+  height: 1vmin;
+  background: #000;
+  top: -0.3vmin;
+  left: -0.7vmin;
+  transform: rotate(30deg);
+}
+.neck-3::after {
+  width: 2vmin;
+  height: 1vmin;
+  background: #000;
+  top: -0.4vmin;
+  left: 3.3vmin;
+  transform: rotate(-20deg);
+  box-shadow: 1.3vmin -2vmin 0 1.1vmin #000;
+}
+.neck-4 {
+  z-index: 2;
+  width: 1.5vmin;
+  height: 5vmin;
+  background: #000;
+  top: 19vmin;
+  left: 8.4vmin;
+  box-shadow: -1vmin 0.8vmin 0 0.1vmin #000;
+}
+.neck-4::before {
+  width: 6.8vmin;
+  height: 22vmin;
+  background: #000;
+  top: -4.5vmin;
+  left: 5vmin;
+  transform: rotate(-73deg);
+  border-radius: 0 3vmin 0 0;
+}
+.neck-4::after {
+  width: 1.4vmin;
+  height: 2.2vmin;
+  background: #ff0000;
+  top: 5.1vmin;
+  left: -3.4vmin;
+  transform: rotate(-40deg);
+  border-radius: 1vmin;
+}
+.neck-5 {
+  z-index: 2;
+  width: 0.8vmin;
+  height: 2.6vmin;
+  background: #ff0000;
+  top: 24.2vmin;
+  left: 8.9vmin;
+  transform: rotate(40deg) skewY(-20deg);
+  border-radius: 0.2vmin 0 100% 0;
+}
+.neck-5::before {
+  width: 1vmin;
+  height: 2vmin;
+  background: #000;
+  top: -0.7vmin;
+  left: 0.5vmin;
+  transform: rotate(-20deg);
+}
+
+.shirt-1 {
+  width: 13vmin;
+  height: 5vmin;
+  background: #000;
+  top: 28.2vmin;
+  left: 40vmin;
+  transform: rotate(9deg) skewX(10deg);
+  border-radius: 0 1vmin 0 0;
+}
+.shirt-1::before {
+  width: 32vmin;
+  height: 14.8vmin;
+  background: #000;
+  top: 2.9vmin;
+  left: -12.7vmin;
+  transform: rotate(-9deg) skewX(8deg);
+  border-radius: 3vmin 9vmin 0.1vmin 0;
+}
+.shirt-1::after {
+  width: 10vmin;
+  height: 12vmin;
+  background: #000;
+  top: -0.6vmin;
+  left: 8.1vmin;
+  transform: rotate(-14deg);
+  border-radius: 0 100% 0 0;
+}
+.shirt-2 {
+  width: 40vmin;
+  height: 12.5vmin;
+  background: #000;
+  top: 46vmin;
+  left: -27.2vmin;
+  transform: skewX(-14deg);
+  border-radius: 6.2vmin 0 0 0;
+}
+.shirt-2::before {
+  width: 2vmin;
+  height: 12vmin;
+  background: #ff0000;
+  top: -1vmin;
+  left: -1.6vmin;
+  transform: rotate(7deg);
+}
+.shirt-2::after {
+  width: 3vmin;
+  height: 4.5vmin;
+  background: #ff0000;
+  top: -1.7vmin;
+  left: 1.5vmin;
+  transform: skewX(-15deg) rotate(35deg) skewY(-25deg);
+  border-radius: 0 0 2vmin 0;
+}
+.shirt-3 {
+  z-index: 1;
+  width: 20vmin;
+  height: 6vmin;
+  background: #000;
+  top: 32.7vmin;
+  left: 11.7vmin;
+  transform: rotate(10deg);
+}
+.shirt-3::before {
+  width: 12vmin;
+  height: 4vmin;
+  background: #ff0000;
+  top: -1.8vmin;
+  left: 0.9vmin;
+  transform: rotate(-8deg) skewX(25deg);
+  border-radius: 0 0 5vmin 10vmin;
+}
+.shirt-3::after {
+  width: 6vmin;
+  height: 2vmin;
+  background: #000;
+  top: -0.7vmin;
+  left: 11vmin;
+  transform: skewX(-20deg) rotate(-8deg);
+  border-radius: 0 0 100% 0;
+}
+.shirt-4 {
+  z-index: 2;
+  width: 13.5vmin;
+  height: 3vmin;
+  background: #000;
+  top: 31.2vmin;
+  left: -41vmin;
+  transform: rotate(-25deg);
+  border-radius: 0.5vmin 0.4vmin 0 0;
+  box-shadow: 0 2vmin 0 0.1vmin #000;
+}
+.shirt-4::before {
+  width: 2vmin;
+  height: 1vmin;
+  background: #000;
+  top: 9.2vmin;
+  left: 26.9vmin;
+  transform: rotate(-28deg);
+}
+.shirt-4::after {
+  width: 76vmin;
+  height: 5vmin;
+  background: #ff0000;
+  top: 21.8vmin;
+  left: -20vmin;
+  transform: rotate(25deg);
 }/*# sourceMappingURL=main.css.map */
