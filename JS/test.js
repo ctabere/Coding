@@ -23,6 +23,7 @@ colorThree = 33;
 console.log(colorThree);
 
 const myList = [1, 2, 3, 4, color, 6, 7];
+myList.shift()
 console.log(myList[2]+myList[4]);
 console.log(typeof(myList[2]+myList[4]));
 console.log(myList);
