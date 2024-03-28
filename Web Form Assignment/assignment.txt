@@ -1,0 +1,30 @@
+Exploring JavaScript 3/23/24: 
+
+1. Create a web-form with at least the following:
+    - 3 text inputs 
+    - a select input 
+    - a radio select input 
+    - a save/submit button 
+
+
+2. Use JavaScript to console.log any user input whenever data in the form fields is changed by user. 
+    - https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+
+
+3. When user clicks the 'save' button, use JavaScript to:
+    a. console.log all the user inputs only when save button clicked;
+    b. clear the form fields when save button clicked; 
+
+    - https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
+
+
+4. Create a JavaScript array with 10 values (strings or numbers):
+    - use the JavaScript map function to do something with each value in your array; 
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+
+5. Challenge: Create a basic web-page with a countdown that counts from 20 seconds to 0. 
+    - Display the current second count (i.e., '20' should be displayed when page loaded);
+    - Have a button that initiates countdown;
+    - Use JavaScript to create countdown functionality. 
+    - Get creative - change background colors with countdown.
