@@ -5,24 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>JS Form Assignment</title>
         <link rel="stylesheet" href="styles.css">    
-        <script src="form.js"></script>
+        <script src="form.js" defer></script>
     </head>
     <body>
         <div class="container">
             <div class="title">Registration Form</div>
             <form action="#">
                 <div class="user-details">
-                    <div class="input-box">
-                        <span class="details">First Name</span>
-                        <input type="text" placeholder="Enter your first name" required>
+                    <div id="input-box">
+                        <span>First Name</span>
+                        <input id="firstname" type="text" placeholder="Enter your first name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Last Name</span>
-                        <input type="text" placeholder="Enter your last name" required>
+                        <input id="lastname" type="text" placeholder="Enter your last name" required>
                     </div>
                     <div class="input-box">
                         <span class="details">City</span>
-                        <input type="text" placeholder="Enter your city" required>
+                        <input id="city" type="text" placeholder="Enter your city" required>
                     </div>
                 </div>
                 <div class="gender-details">
@@ -42,11 +42,11 @@
                             </div>
                         </div>
                 </div>
-                <div class="button">
+                <div id="button">
                     <input type="submit" value="Sign Up">
                 </div>
                 </div>
             </form>
-        </div>    
+        </div>
     </body>
 </html>

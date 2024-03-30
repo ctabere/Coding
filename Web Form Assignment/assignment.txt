@@ -28,3 +28,6 @@ Exploring JavaScript 3/23/24:
     - Have a button that initiates countdown;
     - Use JavaScript to create countdown functionality. 
     - Get creative - change background colors with countdown.
+
+6. comment on each line of Danny's number generator code
+    - figure out why the number isn't random unless you refresh the page
