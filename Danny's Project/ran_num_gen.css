@@ -1,0 +1,56 @@
+
+
+.container {
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+}
+
+div {
+    flex: 1 200px;
+    height: 200px;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgba(65, 56, 105, 0.8);
+    border-bottom: 3px solid rgba(12, 76, 111, 0.2);
+    padding-bottom: 10px;
+}
+
+#lefttile {
+    border: 1px solid black;
+    background-color: rgba(12, 76, 111, 0.8);
+    border-radius: 8px;
+    margin-left: 250px;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+#righttile {
+    float: right;
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin-right: 250px;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+#click {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color:rgba(11, 69, 91, 0.8);
+    font-size: 1.5em;
+    padding-top: 5px;
+}
+
+#mainpage {
+    background:rgba(184, 207, 219, 0.15);
+}

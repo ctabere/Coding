@@ -27,8 +27,9 @@ function submitButton() {
    function validateGender() {
       // let isChecked = false;
        for (let i = 0; i < 2; i++) {
-           if (genderBox = isChecked)
-               console.log(genderBox[i].value);
+           if (genderBox.value = true)
+               console.log(genderBox.value);
+
            }
 
        }
