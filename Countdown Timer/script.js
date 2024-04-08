@@ -3,3 +3,4 @@ document.getElementById("startButton").addEventListener("click"), function() {
     let seconds = 20;}
 
     
+// write out all the steps

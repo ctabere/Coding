@@ -3,7 +3,7 @@ const rt = document.getElementById("righttile");// I think this is global scope 
 
 const num1 = Math.floor(Math.random() * 10); 
 // Another variable is declared, but I don't understand the rest.  I'm assuming
-
+//  I THINK the math floor rounds whatever value that math.random*10 spits out
 const num2 = Math.floor(Math.random() * 10); // I read this is a static method to return a random float between 0-1
 // then Danny scales it with '* 10' so it doesn't give back mixed numbers or anything less than 1
 
