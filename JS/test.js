@@ -59,3 +59,4 @@ function findRemainder(dividend: number, divisor: number): number {
     const remainder  dividend/divisor;
     return remainder;
 }
+
