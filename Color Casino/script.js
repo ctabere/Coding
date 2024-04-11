@@ -1,23 +1,28 @@
+// here you declared some variables as arrays.  So "COLOR" is going to be replaced with a number pointing to the color shows in the reel
+// It looks like difficulty scales with the multiplier, but at an advantage to the player
 let COLOR = [];
 const colorOne = ["white", "blue", "green", "red", "green", "black", "yellow", "orange"];
 const colorThree = ["white", "blue", "green", "red", "green", "black", "yellow", "orange", "purple", "black", "pink", "brown", "aquamarine", "chartreuse", "coral", "cyan", "cadetblue", "deeppink", "forestgreen", "goldenrod"];
 const colorFive = ["white", "blue", "green", "red", "green", "black", "yellow", "orange", "purple", "black", "pink", "brown", "aquamarine", "chartreuse", "coral", "cyan", "cadetblue", "deeppink", "forestgreen", "goldenrod", "linen", "lightpink", "midnightblue", "olive", "palegreen", "orchid", "plum", "rosybrown"];
 const colorTen = ["white", "blue", "green", "red", "green", "black", "yellow", "orange", "purple", "black", "pink", "brown", "aquamarine", "chartreuse", "coral", "cyan", "cadetblue", "deeppink", "forestgreen", "goldenrod", "linen", "lightpink", "midnightblue", "olive", "palegreen", "orchid", "plum", "rosybrown", "snow", "tan", "tomato", "yellowgreen", "skyblue", "maroon", "khaki", "cornsilk"];
 
+// These variables are the starting values
 let tokens = 500;
 let numWheels = 3;
 let spinTime = 0;
-let rollWheels;
+let rollWheels; // declared, but undefined
 let multiplier = 1;
-let reelsArray = [];
+let reelsArray = []; // I think this is saying that the value of reelsArray will be an array itself based on the [] used
 let bet = 1;
 let winAmount = 0;
 
-document.getElementById("wallet").innerHTML = tokens;
+document.getElementById("wallet").innerHTML = tokens; // refers to the html element "wallet", specifically the text between the tags, 
+// and populates with the "tokens" variable we declared earlier
 document.getElementById("three").addEventListener("click", showThreeWheels);
 document.getElementById("four").addEventListener("click", showFourWheels);
 
 // Begin a new game
+// 1 of 2 functions used in the the html - this appears to be the 'reset' button
 function newGame() {
     console.log("new game");
     tokens = 500;
@@ -26,6 +31,7 @@ function newGame() {
 }
 
 // Spin the wheels and update token total
+// 
 function spin() {
     getBet();
     let mult = getMultiplier();
