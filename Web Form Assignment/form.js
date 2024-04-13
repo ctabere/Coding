@@ -20,18 +20,37 @@ const firstName = document.getElementById("firstname").value;
 const lastName = document.getElementById("lastname").value;
 const city = document.getElementById("city").value;
 
-function submitButton() {
-  let genderChecked = false;
-  let selectedGender = "";
-  for (let i = 0; i < genderBox.length; i++) {
-    if (genderBox[i].checked) {
-      genderChecked = true;
-      selectedGender = genderBox[i].value;
-      break;
-      console.log(genderBox[i].value);
-    }
+// function submitButton() {
+//   let genderChecked = false;
+//   let selectedGender = "";
+//   for (let i = 0; i < genderBox.length; i++) {
+//     if (genderBox[i].checked) {
+//       genderChecked = true;
+//       selectedGender = genderBox[i].value;
+//       break;
+//       console.log(genderBox[i].value);
+//     }
+//   }
+// }
+
+function submitButton() { 
+  if (document.getElementById("male").checked) {
+      selectedGender = "male";
+      console.log(selectedGender);
+      return selectedGender; 
+  } else if (document.getElementById("female").checked) {
+      selectedGender = "female";
+      console.log(selectedGender);
+    return selectedGender; }
+    else if (document.getElementById("other").checked) {
+      selectedGender = "other"
+      console.log(selectedGender);
+      return selectedGender;
+    } else {
+      return;
   }
 }
+
 
 // function validateGender() {
 //   for (document.getElementByName("gender").checked)
