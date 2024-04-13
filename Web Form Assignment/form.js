@@ -20,14 +20,23 @@ const firstName = document.getElementById("firstname").value;
 const lastName = document.getElementById("lastname").value;
 const city = document.getElementById("city").value;
 
-function validateGender() {
-  // let isChecked = false;
+function submitButton() {
+  let genderChecked = false;
+  let selectedGender = "";
   for (let i = 0; i < genderBox.length; i++) {
     if (genderBox[i].checked) {
+      genderChecked = true;
+      selectedGender = genderBox[i].value;
+      break;
       console.log(genderBox[i].value);
     }
   }
 }
+
+// function validateGender() {
+//   for (document.getElementByName("gender").checked)
+//       multiplier = 1;
+//       console.log("1checked");
 
 console.log(firstName, lastName, city);
 

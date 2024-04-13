@@ -4,6 +4,7 @@ const colorOne = ["white", "blue", "green", "red", "green", "black", "yellow", "
 const colorThree = ["white", "blue", "green", "red", "green", "black", "yellow", "orange", "purple", "black", "pink", "brown", "aquamarine", "chartreuse", "coral", "cyan", "cadetblue", "deeppink", "forestgreen", "goldenrod"];
 const colorFive = ["white", "blue", "green", "red", "green", "black", "yellow", "orange", "purple", "black", "pink", "brown", "aquamarine", "chartreuse", "coral", "cyan", "cadetblue", "deeppink", "forestgreen", "goldenrod", "linen", "lightpink", "midnightblue", "olive", "palegreen", "orchid", "plum", "rosybrown"];
 const colorTen = ["white", "blue", "green", "red", "green", "black", "yellow", "orange", "purple", "black", "pink", "brown", "aquamarine", "chartreuse", "coral", "cyan", "cadetblue", "deeppink", "forestgreen", "goldenrod", "linen", "lightpink", "midnightblue", "olive", "palegreen", "orchid", "plum", "rosybrown", "snow", "tan", "tomato", "yellowgreen", "skyblue", "maroon", "khaki", "cornsilk"];
+const colorHundred = ["white", "blue", "green", "red", "green", "black", "yellow", "orange", "purple", "black", "pink", "brown", "aquamarine", "chartreuse", "coral", "cyan", "cadetblue", "deeppink", "forestgreen", "goldenrod", "linen", "lightpink", "midnightblue", "olive", "palegreen", "orchid", "plum", "rosybrown", "snow", "tan", "tomato", "yellowgreen", "skyblue", "maroon", "khaki", "cornsilk", "greenyellow", "navy", "papayawhip", "peachpuff", "salmon", "rebeccapurple", "peru", "lemmonchiffon"]
 //  eventually, COLOR will be replaced with one an index from one of the arrays below it
 // These variables are the starting values
 let tokens = 500;  // player's money
@@ -46,6 +47,9 @@ function spin() { // when spin button is pressed
             case 10:
                 COLOR = colorTen;  // bank of 36 colors
                 break;
+            case 100:
+                COLOR = colorHundred;  // bank of 44 colors by me
+                break;    
             default:
                 COLOR = colorOne;  // default is bank of 8 colors
                 break;
@@ -97,7 +101,7 @@ function spinAnimation() { // this is the 1st argument from the setInterval used
         wheel4Color = Math.floor(Math.random() * COLOR.length);
     }
 
-    document.getElementById("wheel1").style.backgroundColor = COLOR[wheel1Color];
+    document.getElementById("wheel1").style.backgroundColor = COLOR[wheel1Color];  // changes the color of the element's background
     document.getElementById("wheel2").style.backgroundColor = COLOR[wheel2Color];
     document.getElementById("wheel3").style.backgroundColor = COLOR[wheel3Color];
     if (numWheels === 4) {
@@ -144,14 +148,14 @@ function showThreeWheels() {
     } else {
         return;
     }
-console.log("run showThreeReels");
+console.log("run showThreeReels"); // confirms 3 wheel selection
 }
 
 //Show four wheels
 function showFourWheels() {
     let num = document.querySelector("#slots").childElementCount;
     if (num < 4) {
-        const fourthWheel = document.createElement("div");
+        const fourthWheel = document.createElement("div"); // creates the div in the html for the 4th wheel
         fourthWheel.setAttribute("id", "wheel4");
         fourthWheel.setAttribute("class", "wheel");
         document.querySelector("#slots").appendChild(fourthWheel);
@@ -159,7 +163,7 @@ function showFourWheels() {
     } else {
         return;
     }
-console.log("run showFourReels");
+console.log("run showFourReels"); // confirms 4 wheel selection
 }
 
 //Returns selected multiplier
@@ -167,7 +171,7 @@ function getMultiplier() { // this pulls the user selected multiplier
     if (document.getElementById("times1").checked) {
         multiplier = 1;
         console.log("1checked");
-        return multiplier;
+        return multiplier; 
     } else if (document.getElementById("times3").checked) {
         multiplier = 3;
         console.log("3checked");
@@ -179,6 +183,10 @@ function getMultiplier() { // this pulls the user selected multiplier
     } else if (document.getElementById("times10").checked) {
         multiplier = 10;
         console.log("10checked");
+        return multiplier;
+    } else if (document.getElementById("times100").checked) {
+        multiplier = 100;
+        console.log("100checked");
         return multiplier;
     } else {
         return;
