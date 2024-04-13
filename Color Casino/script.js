@@ -22,42 +22,41 @@ document.getElementById("three").addEventListener("click", showThreeWheels);
 document.getElementById("four").addEventListener("click", showFourWheels);
 
 // Begin a new game
-// 1 of 2 functions used in the the html - this appears to be the 'reset' button
+// 1 of 2 functions used in the the html - this appears to be the reset/new game button - but it doesn't reset player selections
 function newGame() {
-    console.log("new game");
-    tokens = 500;
-    document.getElementById("wallet").innerHTML = tokens;
-    return;
+    console.log("new game"); // new game is printed in console, but this apprears to be for debug only
+    tokens = 500; // the purse is redeclared
+    document.getElementById("wallet").innerHTML = tokens; // resetting the token value on the screen
+    return; // ends function and sends the new values back to the caller
 }
 
 // Spin the wheels and update token total
-// 
-function spin() {
-    getBet();
-    let mult = getMultiplier();
-        switch(mult) {
-            case 1:
-                COLOR = colorOne;
-                break;
+function spin() { // when spin button is pressed
+    getBet(); // we get the bet selection from the user from the function below
+    let mult = getMultiplier(); // sets variable 'mult' to the function getMultiplier() which is defined aroud 168 (user's selection 1, 3, 5, or 10)
+        switch(mult) { // a switch statement is used (I just learned about these for this assignment) 
+            case 1: // we're getting a color to assign based on the oucome of the getMultiplier() function which checks to see which ratio button is selected
+                COLOR = colorOne; // this happens to be what I need to complete the original assignment - eureka moment
+                break; // these breaks are needed - without it, the switch statment continues executing the cases even if they aren't selected by the user
             case 3:
-                COLOR = colorThree;
+                COLOR = colorThree; // bank of 20 colors
                 break;
             case 5:
-                COLOR = colorFive;
+                COLOR = colorFive; // bank of 28 colors
                 break;
             case 10:
-                COLOR = colorTen;
+                COLOR = colorTen;  // bank of 36 colors
                 break;
             default:
-                COLOR = colorOne;
+                COLOR = colorOne;  // default is bank of 8 colors
                 break;
-        }
-    if (tokens - bet >= 0) {
-        tokens -= bet;
-        document.getElementById("wallet").innerHTML = tokens;
-        console.log(COLOR);
-        rollWheels = setInterval(spinAnimation, 100);
-        
+        } 
+    if (tokens - bet >= 0) {    //  the second part of the function checks the player purse to make sure they have sufficient funds to place the bet
+        tokens -= bet; // if they have the funds, tokens will decrement tokens equal to the bet
+        document.getElementById("wallet").innerHTML = tokens; // this declares the new value in the html file for the text in .wallet
+        console.log(COLOR); // logs the values calculated by the spin() ie {white: 1, yellow: 1, brown: 1} - this is what shows up on the player screen
+        rollWheels = setInterval(spinAnimation, 100); // rollWheels is declared here and used below.  setInterval takes two arguments (function, interval)
+        // this will 
     } else {
         alert("Oops, you dont have enough tokens to spin the wheel... New game!");
     } 
@@ -219,3 +218,5 @@ function getBet() {
     }
 
 }
+
+// I broke the game by pressing the spin button twice.  The reels never stop, but the game never processes the bet, and you can only win.  Casino's nightmare.
