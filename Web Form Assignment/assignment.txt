@@ -4,7 +4,7 @@ Exploring JavaScript 3/23/24:
     - 3 text inputs 
     - a select input 
     - a radio select input 
-    - a save/submit button 
+    - a save/submit button opkay
 
 
 2. Use JavaScript to console.log any user input whenever data in the form fields is changed by user. 
@@ -31,3 +31,9 @@ Exploring JavaScript 3/23/24:
 
 6. comment on each line of Danny's number generator code
     - figure out why the number isn't random unless you refresh the page
+
+7. Sudoku logic
+8. Poker logic 
+9. Complete boulder/rock/pebble/sand
+
+
