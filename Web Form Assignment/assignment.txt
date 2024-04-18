@@ -4,7 +4,7 @@ Exploring JavaScript 3/23/24:
     - 3 text inputs 
     - a select input 
     - a radio select input 
-    - a save/submit button opkay
+    - a save/submit button
 
 
 2. Use JavaScript to console.log any user input whenever data in the form fields is changed by user. 
