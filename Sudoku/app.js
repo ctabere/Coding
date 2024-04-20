@@ -1,4 +1,15 @@
-// jquery
+const grid = [
+    [0,0,0,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0]
+]
+
 $(document).ready(function(){
   $(".grid").children().each(function(){  //  selecting the children of the grid div, so all the cells are children
       let x; // tried var, let, and const
@@ -15,3 +26,6 @@ $(document).ready(function(){
       }
     });
 });
+
+// create loop to set the game values by checking to see if y value is greater than 1
+// if not, replace with value from grid
