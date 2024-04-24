@@ -1,4 +1,18 @@
 
+// Different strategies:
+// skyscraper pattern
+// backtracking
+// simple elimination - crossing out like numbers in rows/columns/blocks || "houses"
+// hidden single - only candidate left in house
+// hidden/naked pairs/triplets/quads - x/y cell x2 and eliminate all other candidates not == x || y
+// intersection (point pairs & point triplets)
+// x-wing - when x/y cells form a square
+// x-cycles
+// 3d medusa
+// coloring (single chain) - for when you have 2 candidates in a house, they form a strong link, weak links are formed with more than 2 candidates, all possible links 
+// forms a chain
+
+
 
 $(document).ready(function(){
   $(".grid").children().each(function(){  //  selecting the children of the grid div, so all the cells are children
