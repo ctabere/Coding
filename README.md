@@ -3,6 +3,7 @@ Welcome to my development journey!
 Hello there! 👋 Welcome to my GitHub page, where I document and track my progress in learning development. This space serves as a virtual journal of my journey into the exciting world of coding and software development.
 
 About Me
+
 I'm passionate about learning and exploring the endless possibilities that technology offers. Whether it's web development, hardware, or machine learning, I'm eager to dive in, get my hands dirty, and expand my skills.
 
 What to Expect
