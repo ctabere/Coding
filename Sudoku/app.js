@@ -1,3 +1,15 @@
+// Identify the rules.
+// A square 9x9 game board with 81 cells each must hold a value between 1-9.
+// There may only be one instance of each value in each row (r) column (c) or subgrid (k).
+// The solve function needs to check each value to determine if it is unique in r, c, & k.  
+// Starting at 1, if it is not valid based on previous conditions, return that value if true
+// & if false, move on to 2.
+// Repeat for value 1-9 by incrementing through each index [r, c, k]
+// 
+
+
+
+
 
 // Different strategies:
 // skyscraper pattern
