@@ -139,3 +139,6 @@ const grid = [
 // 3) once user data is stored/grid is updated, button press initiates function to check for answers
 
 
+// add solve button
+// add button to 'show loops' and call an alert to see how many loops have been done
+// make a grid of numbers 
