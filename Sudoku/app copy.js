@@ -92,7 +92,7 @@ console.log(grid.map(row => row.join(' ')).join('\n'));
 
 
 function highlightCell(){
-  document.getElementsByClassName("cell").style.background == "red";
+  document.getElementById("00").style.background = "red";
 }
 
 
