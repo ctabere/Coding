@@ -1,3 +1,4 @@
+/*game board styling*/
 .grid {
     display: grid;
     grid-template-columns: repeat(9, 100px);
@@ -6,17 +7,56 @@
 }
 
 .cell {
-    border: 1px solid green;
-    background-color: red;
+    border: 1px solid red;
+    background-color: black;
     text-align: center;
     font-size: 72px;
 }
 
 .cell:hover {
-    background-color: blue;
+    background-color: red;
 }
 
 .cell:active {
-    background-color: purple;
+    background-color: white;
 }
 
+/*buttons*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#solve-button, #reset-button {
+    color: green;
+    border: none;
+    padding: 10px 30px;
+    margin: 20px;
+    font-size:26px;
+}
+
+/*numpad*/ 
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(4, 120px);
+    justify-content: center;
+}
+
+.numpad-btn {
+    border: 1px solid black;
+    background-color: aqua;
+    text-align: center;
+    font-size: 72px;
+}
+
+.numpad-btn:hover {
+    background-color: rgba(45, 245, 0, 0.98);
+}
+
+.numpad-btn:active {
+    background-color: white;
+}

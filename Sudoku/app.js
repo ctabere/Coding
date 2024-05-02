@@ -77,3 +77,12 @@ $(".grid").children().each(function(){  //  selecting the children of the grid d
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.numpad-btn');
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+      console.log(buttons)
+    });
+  });
+});
