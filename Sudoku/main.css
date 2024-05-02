@@ -6,16 +6,17 @@
 }
 
 .cell {
-    border: 1px solid blue;
-    background-color: grey;
+    border: 1px solid green;
+    background-color: red;
     text-align: center;
     font-size: 72px;
 }
-/* 
+
 .cell:hover {
-    background-color: white;
+    background-color: blue;
 }
 
 .cell:active {
-    background-color: yellow;
-} */
+    background-color: purple;
+}
+

@@ -1,0 +1,12 @@
+What we have already:
+1) The grid is set up with dark lines seperating the 3x3 subgrids
+2) All cells share a class, and each has a unique id as well
+3) Using CSS, the cells will highlight on mouseover and check clicked, a different color
+4) In otherwords, the game board is set up, but it's not terribly responsive
+
+What we need:
+1) Each cell needs to take user input (and deletion) -OR- we need a numpad on screen to take user input
+2) That input needs to affect our grid array
+3) Create solve button
+4) Reset button
+5)  

@@ -61,7 +61,7 @@ console.log(grid.map(row => row.join(' ')).join('\n'));
 
 
 $(document).ready(function(){
-$(".grid").children().each(function(){  //  selecting the children of the grid div, so all the cells are children
+$(".grid").children().each(function()){  //  selecting the children of the grid div, so all the cells are children
     let x; // tried var, let, and const
     let y;
 
@@ -74,6 +74,30 @@ $(".grid").children().each(function(){  //  selecting the children of the grid d
     if (x == 2 || x == 5){
       $(this).css("border-bottom-width", 8);
      // console.log(x, y)
-    }
+    }}
   });
+
+  // // for(const x = 0; x < 9 ; x++){
+  // //   for(const y = 0; y < 9; y++){
+  // //     if(grid[x][y] != 0){
+  // //      const id = '#'+x+y;
+  // //      $(id).html(grid[x][y]);
+  // //      $(id).attr('data-original', 'true');
+  // //      $(id).css('font-weight', 'bold');
+  // //     }
+  // //   }
+  // // }
+
+  // // const oldCell = null;
+  // // const newCell;
+
+  // // $(".cell").click(function(){
+  // //   newCell = $(this);
+  // //   if(newCell.attr("data-original") === "true"){
+  // //     if(oldCell != null){
+  // //       oldCell.css("background-color", "white");
+  // //   })
+  // // });
+
 });
+
