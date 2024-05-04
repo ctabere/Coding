@@ -15,3 +15,7 @@ What we need:
 3) link updates to grid to updates on screen
 4) reset button should clear grid, but a page reload may be easiest
 5) create message if puzzle is invalid or if multiple solutions exist
+6) user clicks numpad div and it shows up in game grid
+7) if user clicks numpad div, selected div background-color changes to white and updates value
+8) *bonus* - numpad is disabled unless div is active
+9) ghost numpad unless div active (alert) - msg for user if no div selected 

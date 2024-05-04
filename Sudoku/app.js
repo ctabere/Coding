@@ -110,5 +110,14 @@ document.addEventListener("DOMContentLoaded", function () {
   //   }
   // }
 });
-
+let selectedDiv = null;
+const cells = document.getElementsByClassName('cell');
+for (let i = 0; i < cells.length; i++){
+  cells[i].addEventListener('click', function(event) {
+  selectedDiv = event.target.id;
+  console.log("selectedDiv:", selectedDiv)
+    document.getElementById(selectedDiv).style.backgroundColor = "grey";
+    
+});
+}
 
