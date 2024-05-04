@@ -83,22 +83,32 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(button);
 
       const userInput = button;
-      const selectedCell = document.getElementById("[x][y]")
+      const selectedCell = document.getElementById(".");
       selectedCell.innerHTML += userInput;
-      console.log(userInput);      
+      console.log(userInput);
 
-      inputDiv.addEventListener("click", function() {
-        inputDiv.focus();
+      let activeDiv = null;
+      const cell = document.querySelectorAll('.cell')
+      cell.forEach(div => {
+        div.addEventListener('click', function() {
+          setActiveDiv(div);
+        })
+      })
+
+
+      // inputDiv.addEventListener("click", function () {
+      //   inputDiv.focus();
+      // });
     });
   });
+
+  // function highlightCell() {
+  //   if (style.background == "red") {
+  //     document.getElementById("00").style.background = "grey";
+  //   } else {
+  //     document.getElementById("00").style.background = "red";
+  //   }
+  // }
 });
 
-function highlightCell() {
-  if (style.background == "red") {
-    document.getElementById("00").style.background = "grey";
-  } else {
-    document.getElementById("00").style.background = "red";
-  }
-}
 
-})

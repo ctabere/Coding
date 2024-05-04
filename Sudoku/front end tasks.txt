@@ -3,10 +3,15 @@ What we have already:
 2) All cells share a class, and each has a unique id as well
 3) Using CSS, the cells will highlight on mouseover and check clicked, a different color
 4) In otherwords, the game board is set up, but it's not terribly responsive
+5) Create solve button
+6) Reset button
+7) Numpad on screen to take user input
+
 
 What we need:
-1) Each cell needs to take user input (and deletion) -OR- we need a numpad on screen to take user input
-2) That input needs to affect our grid array
-3) Create solve button
-4) Reset button
-5)  
+
+2) That input needs to affect our grid array.  Once the user finishes inputting the puzzle values, press the solve button.  
+3) add onClick to solve button and run the solve function
+3) link updates to grid to updates on screen
+4) reset button should clear grid, but a page reload may be easiest
+5) create message if puzzle is invalid or if multiple solutions exist

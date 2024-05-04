@@ -80,3 +80,17 @@
 .numpad-btn:active {
     background-color: white;
 }
+
+/*input box masking*/
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 50%;
+    width: 100px;
+    height: 100px;
+    padding-left: 40%;
+}
