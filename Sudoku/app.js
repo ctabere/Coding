@@ -75,7 +75,8 @@ $(document).ready(function () {
       }
     });
 });
-
+  
+// hi
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".numpad-btn");
   buttons.forEach(function (button) {
