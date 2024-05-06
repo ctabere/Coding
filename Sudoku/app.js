@@ -76,7 +76,6 @@ $(document).ready(function () {
     });
 });
   
-// hi
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".numpad-btn");
   buttons.forEach(function (button) {
@@ -111,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //   }
   // }
 });
+
 let selectedDiv = null;
 const cells = document.getElementsByClassName('cell');
 for (let i = 0; i < cells.length; i++){
