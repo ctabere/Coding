@@ -75,50 +75,64 @@ $(document).ready(function () {
       }
     });
 });
-  
+
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".numpad-btn");
+  const cells = document.getElementsByClassName('cell');
+
   buttons.forEach(function (button) {
     button.addEventListener("click", function (event) {
-      console.log(button);
+      const userInput = button; // Get the inner text of the button as user input
+      const selectedCell = document.querySelector('.active-cell'); // Get the currently active cell
+console.log(button.innerText)
+      if (selectedCell) {
+        const [row, col] = selectedCell.id.split('-').map(Number); // Split the ID to get row and column indices
+        if (userInput >= 1 && userInput <= 9) { // Ensure the input is valid
+          grid[row][col] = parseInt(userInput); // Update the grid with the user input
+          selectedCell.innerText = userInput; // Update the cell's text content
+        }
+      }
+    });
+  });
 
-      const userInput = button;
-      const selectedCell = document.getElementById(".");
-      selectedCell.innerHTML += userInput;
-      console.log(userInput);
-
+  // Add event listener to each cell
+  for (let i = 0; i < cells.length; i++) {
+    cells[i].addEventListener('click', function(event) {
+      // Remove active class from all cells
+      for (let j = 0; j < cells.length; j++) {
+        cells[j].classList.remove('active-cell');
+      }
+      
+      // Add active class to the clicked cell
+      event.target.classList.add('active-cell');
+    });
+  }
+});
       let activeDiv = null;
-      const cell = document.querySelectorAll('.cell')
-      cell.forEach(div => {
-        div.addEventListener('click', function() {
-          setActiveDiv(div);
-        })
-      })
-
+      const cell = document.querySelectorAll(".cell");
+      cell.forEach((div) => {
+        div.addEventListener("click", function () {
+          SetActiveDiv(div);
+        });
+      });
 
       // inputDiv.addEventListener("click", function () {
       //   inputDiv.focus();
       // });
-    });
-  });
 
-  // function highlightCell() {
-  //   if (style.background == "red") {
-  //     document.getElementById("00").style.background = "grey";
-  //   } else {
-  //     document.getElementById("00").style.background = "red";
-  //   }
-  // }
-});
 
 let selectedDiv = null;
-const cells = document.getElementsByClassName('cell');
-for (let i = 0; i < cells.length; i++){
-  cells[i].addEventListener('click', function(event) {
-  selectedDiv = event.target.id;
-  console.log("selectedDiv:", selectedDiv)
-    document.getElementById(selectedDiv).style.backgroundColor = "grey";
-    
-});
+const cells = document.getElementsByClassName("cell");
+for (let i = 0; i < cells.length; i++) {
+  cells[i].addEventListener("click", function (event) {
+    selectedDiv = event.target.id;
+    const cellColor = document.getElementById(selectedDiv);
+    console.log("selectedDiv:", selectedDiv);
+    if (cellColor.style.backgroundColor === "grey") {
+      cellColor.style.backgroundColor = "white";
+    } else {
+      cellColor.style.backgroundColor = "grey";
+    }
+    // document.getElementById(selectedDiv).style.backgroundColor = "grey";
+  });
 }
-

@@ -40,8 +40,8 @@ for (let i = 0; i < cells.length; i++){
 }
 
 let selectedDiv = null; // using let becuase this value is going to change a lot
-const cells = document.getElementsByClassName('cell'); // defines cells as a class called cell which holds all of our game board values
-for (let i = 0; i < cells.length; i++){ // starting the for loop to increment through 'cells' now that it's defined as an indexed class
+const cells = document.getElementsByClassName('cell'); // uses class as an array which holds all of our game board values
+for (let i = 0; i < cells.length; i++){ // starting the for loop to increment through 'cells' now that it's defined as an array
     cells[i].addEventListener('click', function(event){ // for 'cells' at 'i' index, listen for click event
     selectedDiv = event.target.id; // pulling back one level, we redeclare selectedDiv as the click event defined in the line above and target each id value
     console.log("selectedDiv:", selectedDiv) // this logs the string "selectedDiv:" and then the value pulled target.id 
