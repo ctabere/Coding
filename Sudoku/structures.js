@@ -48,3 +48,6 @@ for (let i = 0; i < cells.length; i++){ // starting the for loop to increment th
       document.getElementById(selectedDiv).style.backgroundColor = "grey";  // since selectedDiv IS a click event, clicks will change css background-color element    
     });
 } 
+
+let numberOfKids = 4;
+console.log(numberOfKids)
