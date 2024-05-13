@@ -20,6 +20,8 @@ const grid = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
   ];
 
+  let numberOfKids = 4;
+console.log(numberOfKids)
 
 // come back and define this validation function
 function isValid(grid, r, c, k) {
@@ -49,5 +51,3 @@ for (let i = 0; i < cells.length; i++){ // starting the for loop to increment th
     });
 } 
 
-let numberOfKids = 4;
-console.log(numberOfKids)
