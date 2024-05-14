@@ -51,3 +51,9 @@ for (let i = 0; i < cells.length; i++){ // starting the for loop to increment th
     });
 } 
 
+if (condition) {
+  /* code to run if condition is true */
+} else {
+  /* run some other code instead */
+}
+
