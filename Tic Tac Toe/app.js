@@ -28,7 +28,7 @@ function addGo(e) {
 }
 
 function checkscore() {
-  const allSquares = document.querySelectorAll(".square")
+  const allSquares = document.querySelectorAll(".square");
   const winningCombos = [
     [0, 1, 2],
     [3, 4, 5],
@@ -38,14 +38,30 @@ function checkscore() {
     [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6],
-  ]
+  ];
 
-//     winningCombos.forEach(array => {
-//         const circleWins = array.every(cell => 
-//             allSquares[cell].firstChild?.classList.contains.("circle"))
-//         if (circleWins) {
-//             infoDisplay.textContent = "Circle wins!"
-//   }
-// }) 
 
+  // Cloning a node copies all of its attributes and their values, including intrinsic (inline) listeners.
+  
+  winningCombos.forEach((array) => {
+    const circleWins = array.every(
+      (cell) => allSquares[cell].firstChild?.classList.contains("circle")
+    );
+    if (circleWins) {
+      infoDisplay.textContent = "Circle wins!";
+      allSquares.forEach((square) => square.replaceWith(square.cloneNode(true)));
+      return; // Exit the function after a win
+    }
+  });
+
+  winningCombos.forEach((array) => {
+    const crossWins = array.every(
+      (cell) => allSquares[cell].firstChild?.classList.contains("cross")
+    );
+    if (crossWins) {
+      infoDisplay.textContent = "Cross wins!";
+      allSquares.forEach((square) => square.replaceWith(square.cloneNode(true)));
+      return; 
+    }
+  });
 }
