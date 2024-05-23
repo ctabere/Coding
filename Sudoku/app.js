@@ -1,7 +1,7 @@
 function isValid(grid, r, c, k) {
   // function takes 4 parameters
-  const notInRow = !grid[r].includes(k); //checks if k is not already present in the row 'r' of grid
-  const notInColumn = ![...Array(9).keys()].map((i) => grid[i][c]).includes(k); // this creates an array to represent a column by mapping each     // row index 'i' to the value at column 'c' in that row on the game board (grid).  This took me a while to understand.
+  const notInRow = !grid[r].includes(k); //checks if k is not already present in r array
+  const notInColumn = ![...Array(9).keys()].map((i) => grid[i][c]).includes(k); // this creates an array to represent a column by mapping each     // row index 'i' to the value at column 'c' in that row on the game board (grid).  
   // let's break it down further to be sure:
   // ![...Array(9).keys()] - this part sets up a range '...' in an array 'Array' 1-9 '(9)' with a key value pair 'keys()'
   // .map(i => grid[i][c]).includes(k); - here we map (apply function to each element in array) the key value pair to the row index 'i' (this        will be values from grid)
@@ -41,16 +41,20 @@ function solve(grid, r = 0, c = 0) {
 }
 
 const grid = [
-  [0, 0, 0, 5, 0, 0, 0, 6, 0],
-  [0, 8, 0, 0, 3, 2, 0, 0, 0],
-  [0, 1, 9, 7, 0, 0, 0, 0, 8],
-  [5, 0, 8, 4, 0, 0, 0, 0, 0],
-  [0, 4, 0, 0, 1, 0, 0, 0, 7],
-  [0, 0, 0, 6, 8, 3, 0, 5, 0],
-  [0, 2, 0, 0, 7, 0, 3, 4, 0],
-  [0, 0, 0, 0, 0, 0, 7, 0, 6],
-  [0, 7, 0, 2, 5, 0, 8, 0, 1],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
+
+
+
+
 
 solve(grid);
 console.log(grid.map((row) => row.join(" ")).join("\n"));
@@ -78,16 +82,17 @@ $(document).ready(function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".numpad-btn");
-  const cells = document.getElementsByClassName('cell');
+  const cells = document.getElementsByClassName("cell");
 
   buttons.forEach(function (button) {
     button.addEventListener("click", function (event) {
       const userInput = button; // Get the inner text of the button as user input
-      const selectedCell = document.querySelector('.active-cell'); // Get the currently active cell
-console.log(button.innerText)
+      const selectedCell = document.querySelector(".active-cell"); // Get the currently active cell
+      console.log(button.innerText);
       if (selectedCell) {
-        const [row, col] = selectedCell.id.split('-').map(Number); // Split the ID to get row and column indices
-        if (userInput >= 1 && userInput <= 9) { // Ensure the input is valid
+        const [row, col] = selectedCell.id.split("-").map(Number); // Split the ID to get row and column indices
+        if (userInput >= 1 && userInput <= 9) {
+          // Ensure the input is valid
           grid[row][col] = parseInt(userInput); // Update the grid with the user input
           selectedCell.innerText = userInput; // Update the cell's text content
         }
@@ -97,29 +102,30 @@ console.log(button.innerText)
 
   // Add event listener to each cell
   for (let i = 0; i < cells.length; i++) {
-    cells[i].addEventListener('click', function(event) {
+    cells[i].addEventListener("click", function (event) {
       // Remove active class from all cells
       for (let j = 0; j < cells.length; j++) {
-        cells[j].classList.remove('active-cell');
+        cells[j].classList.remove("active-cell");
       }
-      
+
       // Add active class to the clicked cell
-      event.target.classList.add('active-cell');
+      event.target.classList.add("active-cell");
     });
   }
 });
-      let activeDiv = null;
-      const cell = document.querySelectorAll(".cell");
-      cell.forEach((div) => {
-        div.addEventListener("click", function () {
-          SetActiveDiv(div);
-        });
-      });
+let activeDiv = null;
+const cell = document.querySelectorAll(".cell");
+cell.forEach((div) => {
+  div.addEventListener("click", function () {
+    console.log(div);
 
-      // inputDiv.addEventListener("click", function () {
-      //   inputDiv.focus();
-      // });
+    // Need to add something here possibly - right now just logging the html
+  });
+});
 
+// inputDiv.addEventListener("click", function () {
+//   inputDiv.focus();
+// });
 
 let selectedDiv = null;
 const cells = document.getElementsByClassName("cell");

@@ -1,0 +1,21 @@
+Categories:
+- Games
+- Utilities
+- Social Apps
+- Dashboard
+- Shopping
+- News/Blog
+
+Problems:
+- Forgot password
+- Email to fax
+- Add skipper
+- YT video skipper
+- Pomodoro timer
+- note app
+- yt search
+
+
+Once we choose an app...
+
+User stories (how a user will interact with an app)

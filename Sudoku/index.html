@@ -1,117 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sudoku Solver</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="app.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid">
-        <div class="cell" id="00" data-original="false">
-            <!-- <input type="number" pattern="[0-9]*" /> -->
-        </div>
-        
-        <div class="cell" id="01" data-original="false"></div>
-        <div class="cell" id="02" data-original="false"></div>
-        <div class="cell" id="03" data-original="false"></div>
-        <div class="cell" id="04" data-original="false"></div>
-        <div class="cell" id="05" data-original="false"></div>
-        <div class="cell" id="06" data-original="false"></div>
-        <div class="cell" id="07" data-original="false"></div>
-        <div class="cell" id="08" data-original="false"></div>
-        <div class="cell" id="10" data-original="false"></div>
-        <div class="cell" id="11" data-original="false"></div>
-        <div class="cell" id="12" data-original="false"></div>
-        <div class="cell" id="13" data-original="false"></div>
-        <div class="cell" id="14" data-original="false"></div>
-        <div class="cell" id="15" data-original="false"></div>
-        <div class="cell" id="16" data-original="false"></div>
-        <div class="cell" id="17" data-original="false"></div>
-        <div class="cell" id="18" data-original="false"></div>
-        <div class="cell" id="20" data-original="false"></div>
-        <div class="cell" id="21" data-original="false"></div>
-        <div class="cell" id="22" data-original="false"></div>
-        <div class="cell" id="23" data-original="false"></div>
-        <div class="cell" id="24" data-original="false"></div>
-        <div class="cell" id="25" data-original="false"></div>
-        <div class="cell" id="26" data-original="false"></div>
-        <div class="cell" id="27" data-original="false"></div>
-        <div class="cell" id="28" data-original="false"></div>
-        <div class="cell" id="30" data-original="false"></div>
-        <div class="cell" id="31" data-original="false"></div>
-        <div class="cell" id="32" data-original="false"></div>
-        <div class="cell" id="33" data-original="false"></div>
-        <div class="cell" id="34" data-original="false"></div>
-        <div class="cell" id="35" data-original="false"></div>
-        <div class="cell" id="36" data-original="false"></div>
-        <div class="cell" id="37" data-original="false"></div>
-        <div class="cell" id="38" data-original="false"></div>
-        <div class="cell" id="40" data-original="false"></div>
-        <div class="cell" id="41" data-original="false"></div>
-        <div class="cell" id="42" data-original="false"></div>
-        <div class="cell" id="43" data-original="false"></div>
-        <div class="cell" id="44" data-original="false"></div>
-        <div class="cell" id="45" data-original="false"></div>
-        <div class="cell" id="46" data-original="false"></div>
-        <div class="cell" id="47" data-original="false"></div>
-        <div class="cell" id="48" data-original="false"></div>
-        <div class="cell" id="50" data-original="false"></div>
-        <div class="cell" id="51" data-original="false"></div>
-        <div class="cell" id="52" data-original="false"></div>
-        <div class="cell" id="53" data-original="false"></div>
-        <div class="cell" id="54" data-original="false"></div>
-        <div class="cell" id="55" data-original="false"></div>
-        <div class="cell" id="56" data-original="false"></div>
-        <div class="cell" id="57" data-original="false"></div>
-        <div class="cell" id="58" data-original="false"></div>
-        <div class="cell" id="60" data-original="false"></div>
-        <div class="cell" id="61" data-original="false"></div>
-        <div class="cell" id="62" data-original="false"></div>
-        <div class="cell" id="63" data-original="false"></div>
-        <div class="cell" id="64" data-original="false"></div>
-        <div class="cell" id="65" data-original="false"></div>
-        <div class="cell" id="66" data-original="false"></div>
-        <div class="cell" id="67" data-original="false"></div>
-        <div class="cell" id="68" data-original="false"></div>
-        <div class="cell" id="70" data-original="false"></div>
-        <div class="cell" id="71" data-original="false"></div>
-        <div class="cell" id="72" data-original="false"></div>
-        <div class="cell" id="73" data-original="false"></div>
-        <div class="cell" id="74" data-original="false"></div>
-        <div class="cell" id="75" data-original="false"></div>
-        <div class="cell" id="76" data-original="false"></div>
-        <div class="cell" id="77" data-original="false"></div>
-        <div class="cell" id="78" data-original="false"></div>
-        <div class="cell" id="80" data-original="false"></div>
-        <div class="cell" id="81" data-original="false"></div>
-        <div class="cell" id="82" data-original="false"></div>
-        <div class="cell" id="83" data-original="false"></div>
-        <div class="cell" id="84" data-original="false"></div>
-        <div class="cell" id="85" data-original="false"></div>
-        <div class="cell" id="86" data-original="false"></div>
-        <div class="cell" id="87" data-original="false"></div>
-        <div class="cell" id="88" data-original="false"></div>
+      <div class="cell" id="00" data-original="false"></div>
+      <div class="cell" id="01" data-original="false"></div>
+      <div class="cell" id="02" data-original="false"></div>
+      <div class="cell" id="03" data-original="false"></div>
+      <div class="cell" id="04" data-original="false"></div>
+      <div class="cell" id="05" data-original="false"></div>
+      <div class="cell" id="06" data-original="false"></div>
+      <div class="cell" id="07" data-original="false"></div>
+      <div class="cell" id="08" data-original="false"></div>
+      <div class="cell" id="10" data-original="false"></div>
+      <div class="cell" id="11" data-original="false"></div>
+      <div class="cell" id="12" data-original="false"></div>
+      <div class="cell" id="13" data-original="false"></div>
+      <div class="cell" id="14" data-original="false"></div>
+      <div class="cell" id="15" data-original="false"></div>
+      <div class="cell" id="16" data-original="false"></div>
+      <div class="cell" id="17" data-original="false"></div>
+      <div class="cell" id="18" data-original="false"></div>
+      <div class="cell" id="20" data-original="false"></div>
+      <div class="cell" id="21" data-original="false"></div>
+      <div class="cell" id="22" data-original="false"></div>
+      <div class="cell" id="23" data-original="false"></div>
+      <div class="cell" id="24" data-original="false"></div>
+      <div class="cell" id="25" data-original="false"></div>
+      <div class="cell" id="26" data-original="false"></div>
+      <div class="cell" id="27" data-original="false"></div>
+      <div class="cell" id="28" data-original="false"></div>
+      <div class="cell" id="30" data-original="false"></div>
+      <div class="cell" id="31" data-original="false"></div>
+      <div class="cell" id="32" data-original="false"></div>
+      <div class="cell" id="33" data-original="false"></div>
+      <div class="cell" id="34" data-original="false"></div>
+      <div class="cell" id="35" data-original="false"></div>
+      <div class="cell" id="36" data-original="false"></div>
+      <div class="cell" id="37" data-original="false"></div>
+      <div class="cell" id="38" data-original="false"></div>
+      <div class="cell" id="40" data-original="false"></div>
+      <div class="cell" id="41" data-original="false"></div>
+      <div class="cell" id="42" data-original="false"></div>
+      <div class="cell" id="43" data-original="false"></div>
+      <div class="cell" id="44" data-original="false"></div>
+      <div class="cell" id="45" data-original="false"></div>
+      <div class="cell" id="46" data-original="false"></div>
+      <div class="cell" id="47" data-original="false"></div>
+      <div class="cell" id="48" data-original="false"></div>
+      <div class="cell" id="50" data-original="false"></div>
+      <div class="cell" id="51" data-original="false"></div>
+      <div class="cell" id="52" data-original="false"></div>
+      <div class="cell" id="53" data-original="false"></div>
+      <div class="cell" id="54" data-original="false"></div>
+      <div class="cell" id="55" data-original="false"></div>
+      <div class="cell" id="56" data-original="false"></div>
+      <div class="cell" id="57" data-original="false"></div>
+      <div class="cell" id="58" data-original="false"></div>
+      <div class="cell" id="60" data-original="false"></div>
+      <div class="cell" id="61" data-original="false"></div>
+      <div class="cell" id="62" data-original="false"></div>
+      <div class="cell" id="63" data-original="false"></div>
+      <div class="cell" id="64" data-original="false"></div>
+      <div class="cell" id="65" data-original="false"></div>
+      <div class="cell" id="66" data-original="false"></div>
+      <div class="cell" id="67" data-original="false"></div>
+      <div class="cell" id="68" data-original="false"></div>
+      <div class="cell" id="70" data-original="false"></div>
+      <div class="cell" id="71" data-original="false"></div>
+      <div class="cell" id="72" data-original="false"></div>
+      <div class="cell" id="73" data-original="false"></div>
+      <div class="cell" id="74" data-original="false"></div>
+      <div class="cell" id="75" data-original="false"></div>
+      <div class="cell" id="76" data-original="false"></div>
+      <div class="cell" id="77" data-original="false"></div>
+      <div class="cell" id="78" data-original="false"></div>
+      <div class="cell" id="80" data-original="false"></div>
+      <div class="cell" id="81" data-original="false"></div>
+      <div class="cell" id="82" data-original="false"></div>
+      <div class="cell" id="83" data-original="false"></div>
+      <div class="cell" id="84" data-original="false"></div>
+      <div class="cell" id="85" data-original="false"></div>
+      <div class="cell" id="86" data-original="false"></div>
+      <div class="cell" id="87" data-original="false"></div>
+      <div class="cell" id="88" data-original="false"></div>
     </div>
     <span class="buttons">
-        <button id="solve-button">Solve!</button>
-        <button id="reset-button">Reset</button>
-    </span>    
+      <button id="solve-button">Solve!</button>
+      <button id="reset-button">Reset</button>
+    </span>
     <div class="numpad">
-        <div class="numpad-btn" id="0">1</div>
-        <div class="numpad-btn" id="1">2</div>
-        <div class="numpad-btn" id="2">3</div>
-        <div class="numpad-btn" id="3">4</div>
-        <div class="numpad-btn" id="4">5</div>
-        <div class="numpad-btn" id="5">6</div>
-        <div class="numpad-btn" id="6">7</div>
-        <div class="numpad-btn" id="7">8</div>
-        <div class="numpad-btn" id="8">9</div>
-        <div class="numpad-btn" id="blank1"></div>
-        <div class="numpad-btn" id="blank2"></div>
-        <div class="numpad-btn" id="del">Del</div>
+      <div class="numpad-btn" id="0">1</div>
+      <div class="numpad-btn" id="1">2</div>
+      <div class="numpad-btn" id="2">3</div>
+      <div class="numpad-btn" id="3">4</div>
+      <div class="numpad-btn" id="4">5</div>
+      <div class="numpad-btn" id="5">6</div>
+      <div class="numpad-btn" id="6">7</div>
+      <div class="numpad-btn" id="7">8</div>
+      <div class="numpad-btn" id="8">9</div>
+      <div class="numpad-btn" id="blank1"></div>
+      <div class="numpad-btn" id="blank2"></div>
+      <div class="numpad-btn" id="del">Del</div>
     </div>
-</body>
+  </body>
 </html>
