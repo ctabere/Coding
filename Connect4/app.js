@@ -1,8 +1,9 @@
 const gameboard = document.querySelector("#gameboard");
 const infoDisplay = document.querySelector("#info");
 const startCells = ["", "", "", "", "", "", "", "", ""];
-let go = "circle";
-infoDisplay.textContent = "Circle goes first";
+
+let go = "red";
+infoDisplay.textContent = "Red goes first";
 
 function createBoard() {
   startCells.forEach((_cell, index) => {
@@ -21,10 +22,10 @@ function addGo(e) {
   const goDisplay = document.createElement("div");
   goDisplay.classList.add(go);
   e.target.append(goDisplay);
-  go = go === "circle" ? "cross" : "circle";
+  go = go === "red" ? "black" : "red";
   infoDisplay.textContent = "It is now " + go + "'s turn";
   e.target.removeEventListener("click", addGo);
-  checkscore()
+  checkscore();
 }
 
 // all possible win scenarios
@@ -41,33 +42,34 @@ function checkscore() {
     [2, 4, 6],
   ];
 
-
   // Cloning a node copies all of its attributes and their values, including intrinsic (inline) listeners.
-  
+
   // setting up conditions for circle wins and cross wins
   winningCombos.forEach((array) => {
-    const circleWins = array.every(
-      (cell) => allSquares[cell].firstChild?.classList.contains("circle")
+    const redWins = array.every((cell) =>
+      allSquares[cell].firstChild?.classList.contains("red")
     );
-    if (circleWins) {
-      infoDisplay.textContent = "Circle wins!";
-      allSquares.forEach((square) => square.replaceWith(square.cloneNode(true)));
+    if (redWins) {
+      infoDisplay.textContent = "Red wins!";
+      allSquares.forEach((square) =>
+        square.replaceWith(square.cloneNode(true))
+      );
       return; // Exit the function after a win
     }
   });
 
   winningCombos.forEach((array) => {
-    const crossWins = array.every(
-      (cell) => allSquares[cell].firstChild?.classList.contains("cross")
+    const blackWins = array.every((cell) =>
+      allSquares[cell].firstChild?.classList.contains("black")
     );
-    if (crossWins) {
-      infoDisplay.textContent = "Cross wins!";
-      allSquares.forEach((square) => square.replaceWith(square.cloneNode(true)));
-      return; 
+    if (blackWins) {
+      infoDisplay.textContent = "Black wins!";
+      allSquares.forEach((square) =>
+        square.replaceWith(square.cloneNode(true))
+      );
+      return;
     }
   });
 }
-
-
 
 // possibly use array.fill(value, start, end) to reset game board //
