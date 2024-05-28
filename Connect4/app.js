@@ -1,6 +1,49 @@
 const gameboard = document.querySelector("#gameboard");
 const infoDisplay = document.querySelector("#info");
-const startCells = ["", "", "", "", "", "", "", "", ""];
+const startCells = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+];
 
 let go = "red";
 infoDisplay.textContent = "Red goes first";
@@ -44,7 +87,7 @@ function checkscore() {
 
   // Cloning a node copies all of its attributes and their values, including intrinsic (inline) listeners.
 
-  // setting up conditions for circle wins and cross wins
+  // setting up conditions for red wins and black wins
   winningCombos.forEach((array) => {
     const redWins = array.every((cell) =>
       allSquares[cell].firstChild?.classList.contains("red")
