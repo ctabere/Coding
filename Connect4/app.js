@@ -43,6 +43,13 @@ const startCells = [
   "",
   "",
   "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
 ];
 
 let go = "red";
@@ -57,6 +64,9 @@ function createBoard() {
     gameboard.append(cellElement);
   });
 }
+
+
+
 
 createBoard();
 
@@ -114,5 +124,8 @@ function checkscore() {
     }
   });
 }
+
+const invisRow = document.querySelectorAll('.square:nth-child(-n+7)')
+console.log(invisRow);
 
 // possibly use array.fill(value, start, end) to reset game board //

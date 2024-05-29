@@ -9,8 +9,8 @@ body {
 }
 
 #gameboard {
-    width: 70px;
-    height: 60px;
+    width: 700px;
+    height: 700px;
     background-color: grey;
     display: flex;
     flex-wrap: wrap;
@@ -18,10 +18,10 @@ body {
 }
 
 .square {
-    width: 10px;
-    height: 10px;
+    width: 100px;
+    height: 100px;
     background-color: white;
-    border: solid 1px black;
+    border: solid 2px black;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -29,18 +29,29 @@ body {
 }
 
 .red {
-    height: 9px;
-    width: 9px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
-    border: 5px solid red;
+    border: 50px solid red;
     box-sizing: border-box;
 }
 
 .black {
-    height: 9px;
-    width: 9px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
-    border: 5px solid black;
+    border: 50px solid black;
     box-sizing: border-box;
     }
 
+.square:nth-child(-n+7) {
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    border: dotted 2px green;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
