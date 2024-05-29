@@ -125,7 +125,11 @@ function checkscore() {
   });
 }
 
-const invisRow = document.querySelectorAll('.square:nth-child(-n+7)')
-console.log(invisRow);
+const dropRow = document.querySelectorAll('.square:nth-child(-n+7)')
+console.log(dropRow);
+
+
 
 // possibly use array.fill(value, start, end) to reset game board //
+
+// we'll need to append on dragDrop or dragEnd //
