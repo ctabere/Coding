@@ -126,7 +126,33 @@ function checkscore() {
 }
 
 const dropRow = document.querySelectorAll('.square:nth-child(-n+7)')
-console.log(dropRow);
+// console.log(dropRow);
+
+const dropBox1 = document.querySelector('.square:nth-child(n+1)')
+const dropBox2 = document.querySelector('.square:nth-child(n+2)')
+const dropBox3 = document.querySelector('.square:nth-child(n+3)')
+const dropBox4 = document.querySelector('.square:nth-child(n+4)')
+const dropBox5 = document.querySelector('.square:nth-child(n+5)')
+const dropBox6 = document.querySelector('.square:nth-child(n+6)')
+const dropBox7 = document.querySelector('.square:nth-child(n+7)')
+console.log(dropBox1);
+
+
+const col1 = document.querySelectorAll('.square:nth-child(7n+8)')
+const col2 = document.querySelectorAll('.square:nth-child(7n+9)')
+const col3 = document.querySelectorAll('.square:nth-child(7n+10)')
+const col4 = document.querySelectorAll('.square:nth-child(7n+11)')
+const col5 = document.querySelectorAll('.square:nth-child(7n+12)')
+const col6 = document.querySelectorAll('.square:nth-child(7n+13)')
+const col7 = document.querySelectorAll('.square:nth-child(7n+14)')
+console.log(col1);
+
+
+addEventListener(ondrop, dropBox1)
+
+
+
+
 
 
 

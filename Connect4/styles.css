@@ -55,3 +55,33 @@ body {
     align-items: center;
 
 }
+/*  reset and drag buttons*/
+
+.buttons-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 400px;
+    padding-top: 25px;
+}
+
+#reset {
+    height: 3rem;
+    width: 5rem;
+}
+
+.drag-red {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 50px solid red;
+    box-sizing: border-box;
+}
+
+.drag-black {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 50px solid black;
+    box-sizing: border-box;
+}
