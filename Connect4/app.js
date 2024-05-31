@@ -65,9 +65,6 @@ function createBoard() {
   });
 }
 
-
-
-
 createBoard();
 
 function addGo(e) {
@@ -125,36 +122,48 @@ function checkscore() {
   });
 }
 
-const dropRow = document.querySelectorAll('.square:nth-child(-n+7)')
+const dragRed = document.querySelector('.drag-red');
+const dragBlack = document.querySelector('.drag-black');
+const dropRow = document.querySelectorAll(".square:nth-child(-n+7)");
 // console.log(dropRow);
 
-const dropBox1 = document.querySelector('.square:nth-child(n+1)')
-const dropBox2 = document.querySelector('.square:nth-child(n+2)')
-const dropBox3 = document.querySelector('.square:nth-child(n+3)')
-const dropBox4 = document.querySelector('.square:nth-child(n+4)')
-const dropBox5 = document.querySelector('.square:nth-child(n+5)')
-const dropBox6 = document.querySelector('.square:nth-child(n+6)')
-const dropBox7 = document.querySelector('.square:nth-child(n+7)')
+const dropBox1 = document.querySelector(".square:nth-child(n+1)");
+const dropBox2 = document.querySelector(".square:nth-child(n+2)");
+const dropBox3 = document.querySelector(".square:nth-child(n+3)");
+const dropBox4 = document.querySelector(".square:nth-child(n+4)");
+const dropBox5 = document.querySelector(".square:nth-child(n+5)");
+const dropBox6 = document.querySelector(".square:nth-child(n+6)");
+const dropBox7 = document.querySelector(".square:nth-child(n+7)");
 console.log(dropBox1);
 
-
-const col1 = document.querySelectorAll('.square:nth-child(7n+8)')
-const col2 = document.querySelectorAll('.square:nth-child(7n+9)')
-const col3 = document.querySelectorAll('.square:nth-child(7n+10)')
-const col4 = document.querySelectorAll('.square:nth-child(7n+11)')
-const col5 = document.querySelectorAll('.square:nth-child(7n+12)')
-const col6 = document.querySelectorAll('.square:nth-child(7n+13)')
-const col7 = document.querySelectorAll('.square:nth-child(7n+14)')
+const col1 = document.querySelectorAll(".square:nth-child(7n+8)");
+const col2 = document.querySelectorAll(".square:nth-child(7n+9)");
+const col3 = document.querySelectorAll(".square:nth-child(7n+10)");
+const col4 = document.querySelectorAll(".square:nth-child(7n+11)");
+const col5 = document.querySelectorAll(".square:nth-child(7n+12)");
+const col6 = document.querySelectorAll(".square:nth-child(7n+13)");
+const col7 = document.querySelectorAll(".square:nth-child(7n+14)");
 console.log(col1);
 
+addEventListener(ondrop, dropBox1);
+dragRed.addEventListener('dragstart', handleDragStart);
+dragBlack.addEventListener('dragstart', handleDragStart);
+dragRed.addEventListener('dragend', handleDragEnd);
+dragBlack.addEventListener('dragend', handleDragEnd);
 
-addEventListener(ondrop, dropBox1)
+col1.forEach(col => {
+  col1.addEventListener('ondrop', handleDrop);
+});
 
+function handleDragStart(event) {
+  event.dataTransfer.setData('text', event.target.classList[0]); // Set the dragged element's class as data
+}
 
-
-
-
-
+// Function to handle dragend event
+function handleDragEnd(event) {
+  event.target.style.opacity = '1';
+  event.target.append(col1) // Reset opacity to 1
+}
 
 // possibly use array.fill(value, start, end) to reset game board //
 
