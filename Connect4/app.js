@@ -162,7 +162,7 @@ function handleDragStart(event) {
 // Function to handle dragend event
 function handleDragEnd(event) {
   event.target.style.opacity = '1';
-  event.target.append(col1) // Reset opacity to 1
+  event.target.append.col1 // Reset opacity to 1
 }
 
 // possibly use array.fill(value, start, end) to reset game board //
