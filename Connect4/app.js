@@ -123,6 +123,7 @@ function checkscore() {
 }
 
 const dragRed = document.querySelector('.drag-red');
+// addEventListener(click );
 const dragBlack = document.querySelector('.drag-black');
 const dropRow = document.querySelectorAll(".square:nth-child(-n+7)");
 // console.log(dropRow);
@@ -143,7 +144,7 @@ const col4 = document.querySelectorAll(".square:nth-child(7n+11)");
 const col5 = document.querySelectorAll(".square:nth-child(7n+12)");
 const col6 = document.querySelectorAll(".square:nth-child(7n+13)");
 const col7 = document.querySelectorAll(".square:nth-child(7n+14)");
-console.log(col1);
+console.log(col3);
 
 addEventListener(ondrop, dropBox1);
 dragRed.addEventListener('dragstart', handleDragStart);
@@ -151,9 +152,11 @@ dragBlack.addEventListener('dragstart', handleDragStart);
 dragRed.addEventListener('dragend', handleDragEnd);
 dragBlack.addEventListener('dragend', handleDragEnd);
 
-col1.forEach(col => {
-  col1.addEventListener('ondrop', handleDrop);
-});
+// col1.forEach(col => {
+//   col1.addEventListener('ondrop', handleDrop);
+// });
+
+// mouseup : .red : .black
 
 function handleDragStart(event) {
   event.dataTransfer.setData('text', event.target.classList[0]); // Set the dragged element's class as data
