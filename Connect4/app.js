@@ -163,6 +163,8 @@ function chipDrop(e) {
 const red = document.getElementsByClassName("red");
 const black = document.getElementsByClassName("black");
 red.addEventListener(onclick);
+console.log(red);
+
 
 target.addEventListener("drop", (event) => {
   event.preventDefault();
