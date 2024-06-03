@@ -68,7 +68,6 @@ function createBoard() {
 createBoard();
 
 function addGo(e) {
-  console.log("clicked", e);
   const goDisplay = document.createElement("div");
   goDisplay.classList.add(go);
   e.target.append(goDisplay);
@@ -135,7 +134,7 @@ const dropBox4 = document.querySelector(".square:nth-child(n+4)");
 const dropBox5 = document.querySelector(".square:nth-child(n+5)");
 const dropBox6 = document.querySelector(".square:nth-child(n+6)");
 const dropBox7 = document.querySelector(".square:nth-child(n+7)");
-console.log(dropBox1);
+console.log(dropBox4);
 
 const col1 = document.querySelectorAll(".square:nth-child(7n+8)");
 const col2 = document.querySelectorAll(".square:nth-child(7n+9)");
@@ -146,28 +145,29 @@ const col6 = document.querySelectorAll(".square:nth-child(7n+13)");
 const col7 = document.querySelectorAll(".square:nth-child(7n+14)");
 console.log(col3);
 
-addEventListener(ondrop, dropBox1);
-dragRed.addEventListener('dragstart', handleDragStart);
-dragBlack.addEventListener('dragstart', handleDragStart);
-dragRed.addEventListener('dragend', handleDragEnd);
-dragBlack.addEventListener('dragend', handleDragEnd);
+// addEventListener(ondrop, dropBox1);
+// dragRed.addEventListener('dragstart', handleDragStart);
+// dragBlack.addEventListener('dragstart', handleDragStart);
+// dragRed.addEventListener('dragend', handleDragEnd);
+// dragBlack.addEventListener('dragend', handleDragEnd);
 
-// col1.forEach(col => {
-//   col1.addEventListener('ondrop', handleDrop);
-// });
-
-// mouseup : .red : .black
-
-function handleDragStart(event) {
-  event.dataTransfer.setData('text', event.target.classList[0]); // Set the dragged element's class as data
+function chipDrop(e) {
+  const colSelector = document.createElement("div");
+  goDisplay.classList.add(go);
+  e.target.append(goDisplay);
+  go = go === "red" ? "black" : "red";
+  e.target.removeEventListener("click", addGo);
+  checkscore();
 }
 
-// Function to handle dragend event
-function handleDragEnd(event) {
-  event.target.style.opacity = '1';
-  event.target.append.col1 // Reset opacity to 1
-}
+const red = document.getElementsByClassName("red");
+const black = document.getElementsByClassName("black");
+red.addEventListener(onclick);
 
-// possibly use array.fill(value, start, end) to reset game board //
-
-// we'll need to append on dragDrop or dragEnd //
+target.addEventListener("drop", (event) => {
+  event.preventDefault();
+  if (event.target.className === "dropBox1") {
+    dragged.parentNode.removeChild(dragged);
+    event.target.appendChild(dragged);
+  }
+});
