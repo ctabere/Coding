@@ -164,6 +164,8 @@ const red = document.getElementsByClassName("red");
 const black = document.getElementsByClassName("black");
 red.addEventListener(onclick);
 console.log(red);
+console.log(black); //change 2 on new branch
+
 
 
 target.addEventListener("drop", (event) => {
