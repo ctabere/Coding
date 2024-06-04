@@ -72,7 +72,7 @@ function addGo(e) {
   goDisplay.classList.add(go);
   e.target.append(goDisplay);
   go = go === "red" ? "black" : "red";
-  infoDisplay.textContent = "It is now " + go + "'s turn";
+  // infoDisplay.textContent = "It is now " + go + "'s turn";
   e.target.removeEventListener("click", addGo);
   checkscore();
 }
@@ -136,14 +136,14 @@ const dropBox6 = document.querySelector(".square:nth-child(n+6)");
 const dropBox7 = document.querySelector(".square:nth-child(n+7)");
 console.log(dropBox4);
 
-const col1 = document.querySelectorAll(".square:nth-child(7n+8)");
-const col2 = document.querySelectorAll(".square:nth-child(7n+9)");
-const col3 = document.querySelectorAll(".square:nth-child(7n+10)");
-const col4 = document.querySelectorAll(".square:nth-child(7n+11)");
-const col5 = document.querySelectorAll(".square:nth-child(7n+12)");
-const col6 = document.querySelectorAll(".square:nth-child(7n+13)");
-const col7 = document.querySelectorAll(".square:nth-child(7n+14)");
-console.log(col3);
+const col0 = document.querySelectorAll(".square:nth-child(7n+8)");
+const col1 = document.querySelectorAll(".square:nth-child(7n+9)");
+const col2 = document.querySelectorAll(".square:nth-child(7n+10)");
+const col3 = document.querySelectorAll(".square:nth-child(7n+11)");
+const col4 = document.querySelectorAll(".square:nth-child(7n+12)");
+const col5 = document.querySelectorAll(".square:nth-child(7n+13)");
+const col6 = document.querySelectorAll(".square:nth-child(7n+14)");
+console.log(col0);
 
 // addEventListener(ondrop, dropBox1);
 // dragRed.addEventListener('dragstart', handleDragStart);
@@ -160,18 +160,30 @@ function chipDrop(e) {
   checkscore();
 }
 
-const red = document.getElementsByClassName("red");
-const black = document.getElementsByClassName("black");
-red.addEventListener(onclick);
-console.log(red);
-console.log(black); //change 2 on new branch
+const red = document.getElementsByClassName("square");
+const dragRed0 = dropRow[0];
+const dragRed1 = dropRow[1];
+const dragRed2 = dropRow[2];
+const dragRed3 = dropRow[3];
+const dragRed4 = dropRow[4];
+const dragRed5 = dropRow[5];
+const dragRed6 = dropRow[6];
+console.log(dragRed1);
+
+dragRow[0].ondrop = 
 
 
 
-target.addEventListener("drop", (event) => {
-  event.preventDefault();
-  if (event.target.className === "dropBox1") {
-    dragged.parentNode.removeChild(dragged);
-    event.target.appendChild(dragged);
-  }
-});
+
+
+// function handleDragRed(event) {
+  // Your event handling logic here
+//   console.log('Element with .drag-red class was triggered', event);
+// }
+
+// dragRed1.forEach(element => {
+// element.addEventListener('click', handleDragRed);
+// });
+
+
+
