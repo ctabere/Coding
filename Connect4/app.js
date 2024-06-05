@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const gameboard = document.querySelector("#gameboard");
 const infoDisplay = document.querySelector("#info");
 const startCells = [
