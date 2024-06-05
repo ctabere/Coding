@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #0D1282;
+}
+
+#gameboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EEEDED;
+    height: 700px;
+    width:700px;
+}
+
+.game-buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.red {
+    background-color: #D71313;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.black {
+    background-color: black;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
