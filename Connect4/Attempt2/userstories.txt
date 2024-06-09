@@ -1,0 +1,25 @@
+User visits website and sees a gameboard, reset button with a title and instuctions
+    - landing page with gameboard
+    - reset button
+    - red piece
+    - black piece
+    - Info/text area
+
+Player1 clicks square on gameboard, if square is valid, red piece appears, if not, error displays and next user is prompted to click
+    - listen for player click and validate move
+    - if not valid, alert player
+    - function to add piece (starting with red piece)
+    - info display calls next player turn
+
+Player2 is prompted to go after Player1 with info message.  Player2 clicks gameboard and black piece is added if placement is valid
+    - same scenario as player one, but game will need to alternate colors
+
+Function to check for winning combination after each valid move
+    - checks for 4-in-a-row along x, y, and diag
+    - if no winning combination, nothing happens
+    - if combination found, info display x player wins
+    - alert winner and prompt to press button which will reset the game
+    
+
+
+
