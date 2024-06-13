@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         piece.style.position = 'relative'
-        piece.style.top = 'auto'
-        piece.style.left = 'auto'
+        piece.style.top = 'center'
+        piece.style.left = 'center'
         cell.appendChild(piece)
         cell.classList.add(pieceColor) // Mark the cell as occupied by this piece color
       }, 500)

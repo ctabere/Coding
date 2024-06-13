@@ -4,15 +4,18 @@ body {
     align-items: center;
     flex-direction: column;
     height: 50vw;
-    background-color: #0D1282;
+    background-color: #005f73;
 }
 
 #gameboard {
     display: flex;
     flex-direction: row;
-    background-color: yellow;
-    height: 700px;
+    background-color: #005f73;
+    height: 600px;
     width:784px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 10px solid #0A9396;
 }
 
 .game-buttons {
@@ -26,34 +29,32 @@ body {
 
 .red {
     background-color: #D71313;
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
-    margin: 10px;
 }
 
 .black {
     background-color: black;
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
-    margin: 10px;
 }
 .cell {
     width: 100px;
     height: 100px;
-    border: 2px dotted purple;
+    border-top: 1px solid #005f73;
     box-sizing: border-box;
 }
 
 .column {
     width: 100px;
     margin: 5px;
-    background-color: #007bff;
+    background-color: #94D2BD;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    border: 1px solid #fff;
+    border: 1px solid #005f73;
 }
