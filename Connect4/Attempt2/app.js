@@ -75,11 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
       piece.style.top = `${dropHeight}px`
 
       setTimeout(() => {
-        piece.style.position = 'relative'
+        piece.style.position = 'absolute'
         piece.style.top = 'center'
         piece.style.left = 'center'
         cell.appendChild(piece)
         cell.classList.add(pieceColor) // Mark the cell as occupied by this piece color
+        cell.removeChild(piece)
       }, 500)
     })
   }
