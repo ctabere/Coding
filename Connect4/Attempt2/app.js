@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize the board as a 2D array
   const board = Array.from({ length: ROWS }, () => Array(COLS).fill(null));
+console.log(board);
 
   // Add cells to each column
   columns.forEach((column, colIndex) => {
