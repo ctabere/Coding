@@ -110,3 +110,9 @@ console.log(board);
     return false;
   }
 });
+
+
+// winner variable to run after alert
+//try dialog modal instead of alert
+// build out reset function
+// investigate 'local storage api'
